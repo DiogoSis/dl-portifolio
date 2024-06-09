@@ -1,0 +1,23 @@
+.projects {
+    padding: 2rem;
+}
+
+.projectCards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projectCard {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    width: calc(33.333% - 2rem);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.projectImage {
+    max-width: 100%;
+    border-radius: 8px;
+}

@@ -1,0 +1,25 @@
+.header {
+    width: 100vw;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+.header h1{
+    font-size: 2rem;
+}
+  
+.navList {
+    list-style: none;
+    padding: 0;
+}
+  
+.navList li {
+    display: inline;
+    margin: 0 1rem;
+}
+  
+.navList li a {
+    color: white;
+    text-decoration: none;
+}
