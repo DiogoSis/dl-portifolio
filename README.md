@@ -3,5 +3,5 @@
 ### Portifolio Hospedado na AWS Amplify
 
 
-![[https://www.unirio.br/prograd-divulga-resultados-de-bolsas-de-monitoria-e-de-tutoria-especial/propg/jornadapg/imagens/em-construcao/image_view_fullscreen]]
+![Em Contrução](https://www.unirio.br/prograd-divulga-resultados-de-bolsas-de-monitoria-e-de-tutoria-especial/propg/jornadapg/imagens/em-construcao/image_view_fullscreen)
 
