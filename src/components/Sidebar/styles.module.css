@@ -1,20 +1,49 @@
 .sidebar {
-    width: 10vw;
+    position: fixed;
+    left: -100px;
+    width: 10rem;
     height: 100vh;
-    background-color: #f4f4f4;
-    padding: 1rem;
-}
-
-.navList {
+    background-color: var(--charcoal); 
+    color: var(--platinum); 
+    padding: 10rem 1rem 1rem 1rem;
+    transition: left 0.3s ease;
+  }
+  
+  .sidebar.open {
+    left: 0;
+  }
+  
+  .navList {
     list-style: none;
     padding: 0;
-}
-
-.navList li {
+  }
+  
+  .navList li {
     margin-bottom: 1rem;
-}
-
-.navList li a {
+  }
+  
+  .navList li a {
+    display: block;
+    padding: 10px;
     text-decoration: none;
-    color: #333;
-}
+    color: var(--platinum); 
+  }
+  
+  .navList li a:hover {
+    color: var(--tiffany-blue); 
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      left: -100%;
+      top: 0;
+      bottom: 0;
+      transition: left 0.3s ease;
+    }
+  
+    .sidebar.open {
+      left: 0;
+    }
+  }
+  
