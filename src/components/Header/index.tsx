@@ -1,5 +1,6 @@
 import React from 'react';
-import styles from './styles.module.css';
+import { AppBar, Toolbar, IconButton, Typography } from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
 
 interface HeaderProps {
   toggleSidebar: () => void;
@@ -7,13 +8,14 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
   return (
-    <header className={`${styles.header} ${styles.fixedTop}`}>
-      <button className={styles.menuBtn} onClick={toggleSidebar}>☰</button>
-      <div className={styles.titleHeader}>
-        <h1>Diogo Luna <br/> (em construção)</h1>
-        <h3>Apresentação de ideias e projetos</h3>
-      </div>
-    </header>
+    <AppBar position="fixed">
+      <Toolbar>
+        <IconButton edge="start" color="inherit" aria-label="menu" onClick={toggleSidebar}>
+          <MenuIcon />
+        </IconButton>
+        <Typography variant="h6">Diogo Luna</Typography>
+      </Toolbar>
+    </AppBar>
   );
 }
 

@@ -1,18 +1,26 @@
 import React from 'react';
-import styles from './styles.module.css';
+import { Container, Typography, List, ListItem, ListItemText } from '@mui/material';
+
+const skills = [
+  'TypeScript',
+  'React',
+  'Node.js',
+  'Design Patterns',
+  // Adicione mais habilidades aqui
+];
 
 const Skills: React.FC = () => {
   return (
-    <div className={styles.skills}>
-      <h2>Conhecimentos</h2>
-      <ul>
-        <li>TypeScript</li>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>Design Patterns</li>
-        {/* Adicione mais habilidades aqui */}
-      </ul>
-    </div>
+    <Container>
+      <Typography variant="h4" component="h2" gutterBottom>Conhecimentos</Typography>
+      <List>
+        {skills.map((skill, index) => (
+          <ListItem key={index}>
+            <ListItemText primary={skill} />
+          </ListItem>
+        ))}
+      </List>
+    </Container>
   );
 };
 

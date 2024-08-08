@@ -1,11 +1,11 @@
 import React from 'react';
-import styles from './styles.module.css';
+import { Box, Typography } from '@mui/material';
 
 const Footer: React.FC = () => {
   return (
-    <footer className={`${styles.footer} ${styles.fixedBottom}`}>
-      <p>&copy; 2024 Diogo de Assis Luna.</p>
-    </footer>
+    <Box component="footer" p={2} bgcolor="text.secondary" color="white" textAlign="center" position="fixed" bottom={0} width="100%">
+      <Typography variant="body2">&copy; 2024 Diogo de Assis Luna.</Typography>
+    </Box>
   );
 };
 

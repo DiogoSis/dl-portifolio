@@ -1,16 +1,20 @@
 import React from 'react';
-import styles from './styles.module.css';
+import { Container, Typography, List, ListItem, ListItemText } from '@mui/material';
 
 const Certificates: React.FC = () => {
   return (
-    <div className={styles.certificates}>
-      <h2>Certificados</h2>
-      <ul>
-        <li>Certificado 1</li>
-        <li>Certificado 2</li>
+    <Container>
+      <Typography variant="h4" component="h2" gutterBottom>Certificados</Typography>
+      <List>
+        <ListItem>
+          <ListItemText primary="Certificado 1" />
+        </ListItem>
+        <ListItem>
+          <ListItemText primary="Certificado 2" />
+        </ListItem>
         {/* Adicione mais certificados aqui */}
-      </ul>
-    </div>
+      </List>
+    </Container>
   );
 };
 

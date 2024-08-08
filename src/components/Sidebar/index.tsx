@@ -1,5 +1,6 @@
+import React from 'react';
+import { Drawer, List, ListItem, ListItemText } from '@mui/material';
 import { Link } from 'react-router-dom';
-import styles from './styles.module.css';
 
 interface SidebarProps {
   isOpen: boolean;
@@ -8,27 +9,26 @@ interface SidebarProps {
 
 const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
   return (
-    <aside className={`${styles.sidebar} ${isOpen ? styles.open : ''}`}>
-      <nav>
-        <ul className={styles.navList}>
-          <li>
-            <Link to="/" onClick={toggleSidebar}>
-              Home 
-              
-            </Link>
-          </li>
-          <li><Link to="/projects" onClick={toggleSidebar}>Projetos</Link></li>
-          <li><Link to="/skills" onClick={toggleSidebar}>Conhecimentos</Link></li>
-          <li><Link to="/certificates" onClick={toggleSidebar}>Certificados</Link></li>
-          <li>
-            <Link to="/contact" onClick={toggleSidebar}>
-              Contato
-            </Link>
-          </li>
-        </ul>
-      </nav>
-    </aside>
+    <Drawer open={isOpen} onClose={toggleSidebar}>
+      <List>
+        <ListItem button component={Link} to="/" onClick={toggleSidebar}>
+          <ListItemText primary="Home" />
+        </ListItem>
+        <ListItem button component={Link} to="/projects" onClick={toggleSidebar}>
+          <ListItemText primary="Projetos" />
+        </ListItem>
+        <ListItem button component={Link} to="/skills" onClick={toggleSidebar}>
+          <ListItemText primary="Conhecimentos" />
+        </ListItem>
+        <ListItem button component={Link} to="/certificates" onClick={toggleSidebar}>
+          <ListItemText primary="Certificados" />
+        </ListItem>
+        <ListItem button component={Link} to="/contact" onClick={toggleSidebar}>
+          <ListItemText primary="Contato" />
+        </ListItem>
+      </List>
+    </Drawer>
   );
-};
+}
 
 export default Sidebar;

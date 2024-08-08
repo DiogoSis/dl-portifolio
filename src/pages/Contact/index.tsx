@@ -1,26 +1,23 @@
 import React from 'react';
-import styles from './styles.module.css';
+import { Container, Typography, TextField, Button, Box } from '@mui/material';
 
 const Contact: React.FC = () => {
   return (
-    <div className={styles.contact}>
-      <h2>Contato</h2>
+    <Container>
+      <Typography variant="h4" component="h2" gutterBottom>Contato</Typography>
       <form>
-        <div>
-          <label>Nome</label>
-          <input type="text" name="name" required />
-        </div>
-        <div>
-          <label>Email</label>
-          <input type="email" name="email" required />
-        </div>
-        <div>
-          <label>Mensagem</label>
-          <textarea name="message" required></textarea>
-        </div>
-        <button type="submit">Enviar</button>
+        <Box mb={2}>
+          <TextField label="Nome" name="name" fullWidth required />
+        </Box>
+        <Box mb={2}>
+          <TextField label="Email" name="email" type="email" fullWidth required />
+        </Box>
+        <Box mb={2}>
+          <TextField label="Mensagem" name="message" multiline rows={4} fullWidth required />
+        </Box>
+        <Button type="submit" variant="contained" color="primary">Enviar</Button>
       </form>
-    </div>
+    </Container>
   );
 };
 

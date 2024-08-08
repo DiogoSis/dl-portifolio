@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './styles.module.css';
+import { Container, Typography, Grid, Card, CardMedia, CardContent, CardActions, Button } from '@mui/material';
 
 const projects = [
   {
@@ -19,19 +19,36 @@ const projects = [
 
 const Projects: React.FC = () => {
   return (
-    <div className={styles.projects}>
-      <h2>Projetos</h2>
-      <div className={styles.projectCards}>
+    <Container>
+      <Typography variant="h4" component="h2" gutterBottom>Projetos</Typography>
+      <Grid container spacing={4}>
         {projects.map((project, index) => (
-          <div key={index} className={styles.projectCard}>
-            <img src={project.image} alt={project.title} className={styles.projectImage} />
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">Ver Projeto</a>
-          </div>
+          <Grid item key={index} xs={12} sm={6} md={4}>
+            <Card>
+              <CardMedia
+                component="img"
+                height="140"
+                image={project.image}
+                alt={project.title}
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  {project.title}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  {project.description}
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button size="small" color="primary" href={project.link} target="_blank" rel="noopener noreferrer">
+                  Ver Projeto
+                </Button>
+              </CardActions>
+            </Card>
+          </Grid>
         ))}
-      </div>
-    </div>
+      </Grid>
+    </Container>
   );
 };
 
