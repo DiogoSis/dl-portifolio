@@ -47,26 +47,26 @@ Este é um projeto de portfólio desenvolvido para destacar habilidades e experi
 
 1. **Clone o Repositório:**
    ```bash
-   git clone https://github.com/seu-usuario/portfolio-project.git
+   git clone https://github.com/DiogoSis/dl-portifolio
    ```
 2. Navegue até o Diretório do Projeto:
     ```bash
     cd portfolio-project 
     ```
 
-### Instale as Dependências:
+3. Instale as Dependências:
     ```bash
     npm install
     ```
 
-### Execute o Servidor de Desenvolvimento:
+4. Execute o Servidor de Desenvolvimento:
     ```bash
     npm run dev
-    ```
+     ```
 
-### Abra o Navegador e Acesse:
+5. Abra o Navegador e Acesse:
 
-    ```bash
+    ``` bash
     http://localhost:3000
     ```
 
@@ -74,25 +74,24 @@ Este é um projeto de portfólio desenvolvido para destacar habilidades e experi
 ## Contribuições
 
 ### Contribuições são bem-vindas! Para contribuir, siga estas etapas:
-    - Fork o repositório.
-    - Crie uma nova branch:
+- Fork o repositório.
+- Crie uma nova branch:
 
-    ```bash
-    git checkout -b feature/your-feature
-    ```
+```bash
+git checkout -b feature/your-feature
+```
 
 ### Faça suas alterações e commit:
-    ```bash
-    git commit -am 'Add new feature'
-    ```
+```bash
+git commit -am 'Add new feature'
+```
 
 ### Envie a branch:
-    ```bash
-    git push origin feature/your-feature    
-    ```
+```bash
+git push origin feature/your-feature    
+```
 ### Abra um pull request.
 
-Contato
-
+#### Contato:
 Para dúvidas ou mais informações, entre em contato através do e-mail: diogodeassis777@gmail.com
 
