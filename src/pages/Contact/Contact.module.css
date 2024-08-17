@@ -1,0 +1,32 @@
+/* Contact.module.css */
+
+/* Título da página */
+.title {
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  
+  /* Formulário */
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px; /* Ajusta a largura do formulário no desktop */
+    margin: 0 auto;
+  }
+  
+  /* Campos do formulário */
+  .input {
+    background-color: #9ebd9eb0; /* Verde escuro */
+    color: white!important; /* Texto em branco */
+  }
+  
+  .label {
+    color: rgb(224, 224, 224); /* Label em branco */
+  }
+  
+  /* Botão de envio */
+  .MuiButton-contained {
+    margin-top: 16px;
+  }
+  

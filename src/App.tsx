@@ -21,9 +21,16 @@ const App: React.FC = () => {
     <Router>
       <CssBaseline />
       <Header toggleSidebar={toggleSidebar} />
-      <Box display="flex">
+      <Box display="flex" flexDirection="row" minHeight="100vh">
         <Sidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
-        <Box component="main" flexGrow={1} p={3}>
+        <Box 
+          component="main" 
+          flexGrow={1} 
+          p={3}
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+        >
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
@@ -31,9 +38,9 @@ const App: React.FC = () => {
             <Route path="/certificates" element={<Certificates />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
+        <Footer />
         </Box>
       </Box>
-      <Footer />
     </Router>
   );
 }

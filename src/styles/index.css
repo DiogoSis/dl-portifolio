@@ -25,22 +25,31 @@ body {
   padding: 0;
   box-sizing: border-box;
   display: flex;
-  place-items: center;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--TUI);
-  color: #00ff00;
-  font-family: Arial, sans-serif;
+  color: var(--charcoal);
+  font-family: var(--font-family);
+  min-height: 100vh;
 }
 
+/* Container principal */
+.container {
+  width: 100%;
+  max-width: 1200px; /* Ajuste conforme necessário */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Título principal */
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
   color: var(--charcoal);
-}
-
-h1, h2 {
   border-bottom: 2px solid #00ff00;
 }
 
+/* Botões */
 button {
   background-color: #00ff00;
   color: var(--TUI);
@@ -59,20 +68,23 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.container {
-  border: 1px solid #00ff00;
-  padding: 20px;
-}
-
+/* Conteúdo da página */
 .main-content {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
+/* Ajuste do conteúdo da página */
 .page-content {
   display: flex;
-  padding: 12rem;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem; /* Ajuste o padding conforme necessário */
 }
 
+/* Estilos responsivos */
 @media (prefers-color-scheme: light) {
   :root {
     color: var(--charcoal);
@@ -85,9 +97,5 @@ button:focus-visible {
 
   button {
     background-color: var(--platinum);
-  }
-
-  .page-content {
-    padding: 9rem 2rem 1rem 2rem;
   }
 }
