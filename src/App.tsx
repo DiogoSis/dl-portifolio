@@ -13,7 +13,6 @@ import Contact from "./pages/Contact";
 
 const App: React.FC = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
   };

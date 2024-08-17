@@ -1,6 +1,12 @@
 import React from 'react';
 import { Drawer, List, ListItem, ListItemText } from '@mui/material';
 import { Link } from 'react-router-dom';
+import styles from './Sidebar.module.css';
+import HomeIcon from '@mui/icons-material/Home';
+import ProjectIcon from '@mui/icons-material/Work';
+import SkillsIcon from '@mui/icons-material/School';
+import CertificatesIcon from '@mui/icons-material/EmojiEvents';
+import ContactIcon from '@mui/icons-material/ContactMail';
 
 interface SidebarProps {
   isOpen: boolean;
@@ -9,22 +15,22 @@ interface SidebarProps {
 
 const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
   return (
-    <Drawer open={isOpen} onClose={toggleSidebar}>
+    <Drawer classes={{paper:styles.drawerPaper}} open={isOpen} onClose={toggleSidebar}>
       <List>
-        <ListItem button component={Link} to="/" onClick={toggleSidebar}>
-          <ListItemText primary="Home" />
+        <ListItem className={styles.listItem} button component={Link} to="/" onClick={toggleSidebar}>
+          <HomeIcon className={styles.icon}/><ListItemText className={styles.listItemText} primary="Home" />
         </ListItem>
-        <ListItem button component={Link} to="/projects" onClick={toggleSidebar}>
-          <ListItemText primary="Projetos" />
+          <ListItem className={styles.listItem} button component={Link} to="/projects" onClick={toggleSidebar}>
+          <ProjectIcon className={styles.icon}/><ListItemText className={styles.listItemText} primary="Projetos" />
         </ListItem>
-        <ListItem button component={Link} to="/skills" onClick={toggleSidebar}>
-          <ListItemText primary="Conhecimentos" />
+        <ListItem className={styles.listItem} button component={Link} to="/skills" onClick={toggleSidebar}>
+          <SkillsIcon className={styles.icon}/><ListItemText className={styles.listItemText} primary="Conhecimentos" />
         </ListItem>
-        <ListItem button component={Link} to="/certificates" onClick={toggleSidebar}>
-          <ListItemText primary="Certificados" />
+        <ListItem className={styles.listItem} button component={Link} to="/certificates" onClick={toggleSidebar}>
+          <CertificatesIcon className={styles.icon}/><ListItemText className={styles.listItemText} primary="Certificados" />
         </ListItem>
-        <ListItem button component={Link} to="/contact" onClick={toggleSidebar}>
-          <ListItemText primary="Contato" />
+        <ListItem className={styles.listItem} button component={Link} to="/contact" onClick={toggleSidebar}>
+          <ContactIcon className={styles.icon}/><ListItemText className={styles.listItemText} primary="Contato" />
         </ListItem>
       </List>
     </Drawer>

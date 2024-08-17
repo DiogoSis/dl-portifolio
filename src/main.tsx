@@ -1,10 +1,29 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
-import './index.css'
+import './styles/index.css'
+import { ThemeProvider } from '@emotion/react'
+import { createTheme } from '@mui/material'
+
+const theme = createTheme({
+  typography: {
+    fontFamily: 'Courier New, monospace', // Fontes monoespaçadas
+  },
+  palette: {
+    primary: {
+      main: '#00ff00',
+    },
+    background: {
+      default: '#1b1b1b',
+    },
+    text: {
+      primary: '#00ff00',
+    },
+  },
+})
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
+  <ThemeProvider theme={theme}>
     <App />
-  </React.StrictMode>,
+  </ThemeProvider>
 )
