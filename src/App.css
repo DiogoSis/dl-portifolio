@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif, 'SF Pixelate';
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,4 +17,11 @@ body {
 
 .main-content {
   display: flex;
+}
+
+@font-face{
+  font-family: 'SF Pixelate';
+  src: url('../../assets/font/SF\ Pixelate.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }

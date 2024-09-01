@@ -1,24 +1,27 @@
-import React, { useEffect, useState } from 'react';
 import { Box } from '@mui/material';
 import styles from './Slider.module.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-cube';
-import { imageGalery } from '../../exports/images';
 import { EffectCube, Pagination } from 'swiper/modules';
+import { useEffect, useState } from 'react';
 
-const ImageSlider: React.FC = () => {
+interface ImageSliderProps {
+  images: Promise<{ default: string }>[];
+}
 
-  const [images, setImages] = useState<string[]>([]);
+const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
+  const [loadedImages, setLoadedImages] = useState<string[]>([]);
 
   useEffect(() => {
     const loadImages = async () => {
-      const loadedImages = await Promise.all(imageGalery);
-      setImages(loadedImages.map (img => img.default))
-    }
-    loadImages()
-  }, [])
+      const resolvedImages = await Promise.all(images);
+      setLoadedImages(resolvedImages.map(img => img.default));
+    };
+
+    loadImages();
+  }, [images])
 
   return (
     <Box className={styles.sliderContainer}>
@@ -29,7 +32,7 @@ const ImageSlider: React.FC = () => {
         slidesPerView={1}
         effect='cube'
       >
-        {images.map((image, index) => (
+        {loadedImages.map((image, index) => (
           <SwiperSlide key={index}>
             <Box className={styles.imageContainer}>
               <img 
