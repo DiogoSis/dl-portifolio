@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Formação Front-end",
+        "conclusion": "24/12/2022",
+        "certificate": "https://cursos.alura.com.br/user/diogodeassis777/degree-front-end-113709/certificate",
+        "area": "Desenvolvimento Web"
+    },
+    {
+        "id": 2,
+        "name": "Formação Desenvolva aplicações Web com JavaScript",
+        "conclusion": "08/01/2023",
+        "certificate": "https://cursos.alura.com.br/user/diogodeassis777/degree-javascript-front-end-v374365-374365/certificate",
+        "area": "Desenvolvimento Web"
+    },
+    {
+        "id": 3,
+        "name": "Formação Pratique HTML e CSS em projetos Web",
+        "conclusion": "10/12/2022",
+        "certificate": "https://cursos.alura.com.br/user/diogodeassis777/degree-html-css-v534235-534235/certificate",
+        "area": "Desenvolvimento Web"
+    }
+]
