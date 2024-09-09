@@ -1,6 +1,8 @@
 import React from "react";
 import { Box, Button, Typography } from "@mui/material";
 import styles from "./CardCertificado.module.css";
+import SchoolIcon from '@mui/icons-material/School';
+
 
 interface CertificadoProps {
     id: number;
@@ -22,10 +24,10 @@ const CardCertificado: React.FC<CertificadoProps> = ({
 }) => {
     return (
       <Box className={styles.card} style={{ backgroundImage: `url(${imageUrl})` }}>
-        <Typography variant="h5" className={styles.nome}>
+        <Typography style={{ fontWeight: "bold" }} className={styles.nome}>
           {courseName}
         </Typography>
-        <Typography variant="h6" className={styles.categoria}>
+        <Typography className={styles.categoria}>
           {categoryCode}
         </Typography>
         <Box className={styles.dates}>
@@ -34,12 +36,13 @@ const CardCertificado: React.FC<CertificadoProps> = ({
         </Box>
         <Button 
           variant="contained" 
-          size="large"
+          size="small"
           href={certificateUrl} 
           target="_blank" 
           className={styles.link}
         >
-          Ver Certificado
+          <SchoolIcon className={styles.icon}/>
+          Certificado
         </Button>
       </Box>
     );
