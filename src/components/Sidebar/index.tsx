@@ -1,5 +1,5 @@
 import React from 'react';
-import { Drawer, List, ListItem, ListItemText } from '@mui/material';
+import { Drawer, List, ListItem, ListItemButton, ListItemText } from '@mui/material';
 import { Link } from 'react-router-dom';
 import styles from './Sidebar.module.css';
 import HomeIcon from '@mui/icons-material/Home';
@@ -15,33 +15,34 @@ interface SidebarProps {
 }
 
 const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
+
+  const menuItems = [
+    {text: 'Home', icon:<HomeIcon />, path: '/'},
+    {text: 'Sobre mim', icon:<ArchitectureIcon />, path: '/about'},
+    {text: 'Projetos', icon:<ProjectIcon />, path: '/projects'},
+    {text: 'Conhecimentos', icon:<SkillsIcon />, path: '/skills'},
+    {text: 'Certificados', icon:<CertificatesIcon />, path: '/certificates'},
+    {text: 'Contato', icon:<ContactIcon />, path: '/contact'}
+  ]
+
   return (
     <Drawer classes={{paper:styles.drawerPaper}} open={isOpen} onClose={toggleSidebar}>
       <List>
-        <ListItem className={styles.listItem} button component={Link} to="/" onClick={toggleSidebar}>
-          <HomeIcon className={styles.icon}/>
-          <ListItemText className={styles.listItemText} primary="Home" />
-        </ListItem>
-        <ListItem className={styles.listItem} button component={Link} to="/about" onClick={toggleSidebar}>
-          <ArchitectureIcon className={styles.icon}/>
-          <ListItemText className={styles.listItemText} primary="Sobre mim" />
-        </ListItem>
-          <ListItem className={styles.listItem} button component={Link} to="/projects" onClick={toggleSidebar}>
-          <ProjectIcon className={styles.icon}/>
-          <ListItemText className={styles.listItemText} primary="Projetos" />
-        </ListItem>
-        <ListItem className={styles.listItem} button component={Link} to="/skills" onClick={toggleSidebar}>
-          <SkillsIcon className={styles.icon}/>
-          <ListItemText className={styles.listItemText} primary="Conhecimentos" />
-        </ListItem>
-        <ListItem className={styles.listItem} button component={Link} to="/certificates" onClick={toggleSidebar}>
-          <CertificatesIcon className={styles.icon}/>
-          <ListItemText className={styles.listItemText} primary="Certificados" />
-        </ListItem>
-        <ListItem className={styles.listItem} button component={Link} to="/contact" onClick={toggleSidebar}>
-          <ContactIcon className={styles.icon}/>
-          <ListItemText className={styles.listItemText} primary="Contato" />
-        </ListItem>
+        {menuItems.map(({ text, icon, path}) => (
+          <ListItem
+            key={text}
+            className={styles.listItem}
+            component={Link}
+            to={path}
+            onClick={toggleSidebar}
+            aria-label={text}
+          >
+            <ListItemButton>
+              <span className={styles.icon}>{icon}</span>
+              <ListItemText className={styles.listItemText} primary={text} />
+            </ListItemButton>
+          </ListItem>
+        ))}
       </List>
     </Drawer>
   );
