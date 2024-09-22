@@ -1,5 +1,6 @@
 @font-face{
-  font-family: 'sf pixelate';
+  font-family: 'sf pixelate', Courier, monospace;
+  src: url('../../assets/font/SF\ Pixelate.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
