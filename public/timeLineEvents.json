@@ -1,0 +1,23 @@
+[
+  { "year": 2024, "description": "Principal Desenvolvedor", "category": "work" },
+  { "year": 2023, "description": "Voltei a faculdade de SI na Estácio", "category": "course" },
+  { "year": 2023, "description": "Desenvolvedor na Clubflex e Segmedic", "category": "work" },
+  { "year": 2021, "description": "Abri um Pub e empreendi", "category": "work" },
+  { "year": 2020, "description": "Voltei para a Oi e iniciei estudos em programação", "category": "work" },
+  { "year": 2018, "description": "Tranquei a faculdade", "category": "event" },
+  { "year": 2017, "description": "Iniciei faculdade de Sistemas de Informação", "category": "course" },
+  { "year": 2015, "description": "Voltei para o Rio", "category": "event" },
+  { "year": 2014, "description": "Trabalhei na Oi", "category": "work" },
+  { "year": 2013, "description": "Trabalhei com Redes", "category": "work" },
+  { "year": 2013, "description": "Mudança para Cabo Frio", "category": "event" },
+  { "year": 2012, "description": "Nascimento do meu filho", "category": "event" },
+  { "year": 2010, "description": "Casei-me", "category": "event" },
+  { "year": 2009, "description": "Curso de Delphi", "category": "course" },
+  { "year": 2008, "description": "Trabalhei no CPD do Extra", "category": "work" },
+  { "year": 2007, "description": "Dei aula de Informática Básica", "category": "work" },
+  { "year": 2005, "description": "Trabalhei consertando computadores", "category": "work" },
+  { "year": 2004, "description": "Curso de Montagem e Manutenção", "category": "course" },
+  { "year": 2002, "description": "Curso de Informática Básica", "category": "course" },
+  { "year": 2001, "description": "Ganhei meu primeiro computador", "category": "event" }
+]
+  

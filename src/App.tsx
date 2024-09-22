@@ -10,6 +10,7 @@ import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Certificates from "./pages/Certificates";
 import Contact from "./pages/Contact";
+import AboutMe from "./pages/AboutMe";
 
 const App: React.FC = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -33,6 +34,7 @@ const App: React.FC = () => {
         >
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutMe />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/skills" element={<Skills />} />
             <Route path="/certificates" element={<Certificates />} />

@@ -1,0 +1,35 @@
+.content {
+    margin: 4rem;
+    min-width: 40px;
+}
+
+.contentBox {
+    margin: 2rem 0;
+}
+
+.timelineContainer {
+    display: flex;
+    justify-content: flex-start; /* Alinha à esquerda */
+    height: 100%;
+}
+
+.title {
+    font-family: 'sf pixelate' !important;
+}
+
+.subTitle {
+    font-family: 'sf pixelate' !important;
+    margin: 2rem 0;
+}
+
+.contentImag {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 5rem; 
+}
+
+.contentImag img {
+    width: 100%; /* ajusta a largura da imagem */
+    height: auto; /* mantém a proporção */
+}

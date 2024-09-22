@@ -22,21 +22,24 @@ const Certificates: React.FC = () => {
   }, []);
 
   return (
-    <Container>
+    <Container>      
       <Container>
-        <Typography variant="h3" marginTop={5}>Cursos e Formações</Typography>
-        <Box></Box>
-      </Container>
-      <Container>
-        <Typography variant="h3">Diplomas e Certificados</Typography>
+
+        {/* animação */}
         <Box position="fixed" width="100%">
           <AnimatedBackground />
         </Box>
+
+        {/* Formações */}
+        <Typography variant="h3" marginTop={5}>Cursos e Formações</Typography>
+        <Grid>Formações</Grid>
+
+        {/* Cursos */}
+        <Typography variant="h3" marginTop={2}>Cursos</Typography>
         <Grid 
           container 
           paddingTop={8} 
           spacing={4}
-          justifyContent="center"
           alignItems="center"
         >
           {certificates.map((certificado) => (
