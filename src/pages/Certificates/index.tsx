@@ -43,7 +43,7 @@ const Certificates: React.FC = () => {
           alignItems="center"
         >
           {certificates.map((certificado) => (
-            <Grid item key={certificado.id} spacing={3}>
+            <Grid item key={certificado.id} xs={12} sm={6} md={4} >
               <CardCertificado {...certificado} />
             </Grid>
           ))}
