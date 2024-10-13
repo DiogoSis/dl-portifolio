@@ -1,138 +1,53 @@
 import React, { useState } from 'react';
-import { Container, Typography, TextField, Button, Box, Radio, RadioGroup, FormControlLabel, FormControl, FormLabel } from '@mui/material';
+import { Box, Button, Typography } from '@mui/material';
 import styles from './Contact.module.css';
+import ComplimentsForm from '../../components/Forms/ComplimentsForm';
+import SocialNetworksForm from '../../components/Forms/SocialForm';
+import ConsultingForm from '../../components/Forms/ConsultingForm';
+import JobOfferForm from '../../components/Forms/JobOfferForm';
+
+
 
 const Contact: React.FC = () => {
-  const [contactType, setContactType] = useState<string>('Freelance Service');
-  const [companyName, setCompanyName] = useState<string>('');
-  const [formValues, setFormValues] = useState<{ name: string; email: string; phone: string; message: string }>({
-    name: '',
-    email: '',
-    phone: '',
-    message: ''
-  });
-  const [errors, setErrors] = useState<{ name: boolean; email: boolean; phone: boolean }>({ name: false, email: false, phone: false });
+  const [selectedOption, setSelectedOption] = useState<string | null>(null);
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = event.target;
-    setFormValues(prevValues => ({ ...prevValues, [name]: value }));
+  const handleOptionClick = (option: string) => {
+    setSelectedOption(option);
   };
 
-  const handleContactTypeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setContactType((event.target as HTMLInputElement).value);
-    if ((event.target as HTMLInputElement).value === 'Job Offer') {
-      setCompanyName('');
-    }
-  };
-
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const { name, email, phone } = formValues;
-    const nameError = !name.trim();
-    const emailError = !email.trim();
-    const phoneError = !phone.trim();
-    
-    setErrors({ name: nameError, email: emailError, phone: phoneError });
-
-    if (!nameError && !emailError && !phoneError) {
-      alert('Formulário enviado com sucesso!');
-      // Aqui você pode adicionar a lógica para enviar o formulário
-      // Resetando o formulário
-      setFormValues({ name: '', email: '', phone: '', message: '' });
-      setCompanyName('');
-    } else {
-      alert('Por favor, preencha todos os campos obrigatórios.');
-    }
+  const handleBack = () => {
+    setSelectedOption(null);
   };
 
   return (
-    <Container>
-      <Typography variant="h3" component="h2" gutterBottom className={styles.title}>
-        Contato
-      </Typography>
-      <form onSubmit={handleSubmit} className={styles.form}>
-        <Box mb={2}>
-          <TextField
-            label="Nome"
-            name="name"
-            fullWidth
-            required
-            value={formValues.name}
-            onChange={handleChange}
-            error={errors.name}
-            helperText={errors.name ? 'Nome é obrigatório' : ''}
-            InputLabelProps={{ className: styles.label }}
-            InputProps={{ className: styles.input }}
-          />
-        </Box>
-        <Box mb={2}>
-          <TextField
-            label="Email"
-            name="email"
-            type="email"
-            fullWidth
-            required
-            value={formValues.email}
-            onChange={handleChange}
-            error={errors.email}
-            helperText={errors.email ? 'Email é obrigatório' : ''}
-            InputLabelProps={{ className: styles.label }}
-            InputProps={{ className: styles.input }}
-          />
-        </Box>
-        <Box mb={2}>
-          <TextField
-            label="Telefone"
-            name="phone"
-            fullWidth
-            required
-            value={formValues.phone}
-            onChange={handleChange}
-            error={errors.phone}
-            helperText={errors.phone ? 'Telefone é obrigatório' : ''}
-            InputLabelProps={{ className: styles.label }}
-            InputProps={{ className: styles.input }}
-          />
-        </Box>
-        <Box mb={2}>
-          <FormControl component="fieldset">
-            <FormLabel component="legend" className={styles.formLabel}>Tipo de Contato</FormLabel>
-            <RadioGroup value={contactType} onChange={handleContactTypeChange}>
-              <FormControlLabel value="Freelance Service" control={<Radio />} label="Serviço Freelance" />
-              <FormControlLabel value="Job Offer" control={<Radio />} label="Oferta de Emprego" />
-              <FormControlLabel value="Friendship Message" control={<Radio />} label="Mensagem de Amizade" />
-            </RadioGroup>
-          </FormControl>
-        </Box>
-        {contactType === 'Job Offer' && (
-          <Box mb={2}>
-            <TextField
-              label="Nome da Empresa"
-              name="companyName"
-              fullWidth
-              value={companyName}
-              onChange={(e) => setCompanyName(e.target.value)}
-              InputLabelProps={{ className: styles.label }}
-              InputProps={{ className: styles.input }}
-            />
+    <Box className={styles.container}>
+      {!selectedOption && (
+        <>
+          <Typography variant="h4" gutterBottom>
+            Contato, escolha uma das opções:
+          </Typography>
+          <Box className={styles.buttonContainer}>
+            <Button variant="contained" onClick={() => handleOptionClick('compliments')}>Elogios ou Ideias</Button>
+            <Button variant="contained" onClick={() => handleOptionClick('social')}>Me siga nas Redes</Button>
+            <Button variant="contained" onClick={() => handleOptionClick('consulting')}>Consultoria para minha empresa</Button>
+            <Button variant="contained" onClick={() => handleOptionClick('jobOffer')}>Oferta de Trabalho</Button>
           </Box>
-        )}
-        <Box mb={2}>
-          <TextField
-            label="Mensagem"
-            name="message"
-            multiline
-            rows={4}
-            fullWidth
-            value={formValues.message}
-            onChange={handleChange}
-            InputLabelProps={{ className: styles.label }}
-            InputProps={{ className: styles.input }}
-          />
-        </Box>
-        <Button type="submit" variant="contained" color="primary">Enviar</Button>
-      </form>
-    </Container>
+        </>
+      )}
+
+      {selectedOption === 'compliments' && (
+        <ComplimentsForm onBack={handleBack} />
+      )}
+      {selectedOption === 'social' && (
+        <SocialNetworksForm onBack={handleBack} />
+      )}
+      {selectedOption === 'consulting' && (
+        <ConsultingForm onBack={handleBack} />
+      )}
+      {selectedOption === 'jobOffer' && (
+        <JobOfferForm onBack={handleBack} />
+      )}
+    </Box>
   );
 };
 
