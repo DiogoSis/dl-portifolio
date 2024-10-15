@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, Avatar, Button, Divider } from "@mui/material";
+import { Box, Typography, Avatar, Button } from "@mui/material";
 import styles from "./Home.module.css";
 import fotoPerfil from "../../assets/photos/000.jpg";
 import { AnimatedBackground } from "../../components/AnimateBackgound";
@@ -9,7 +9,9 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import RedditIcon from "@mui/icons-material/Reddit";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
+import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import { useNavigate } from "react-router-dom";
+import BarTechIcons from "../../components/BarTechIcons";
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
@@ -17,23 +19,73 @@ const Home: React.FC = () => {
     navigate("/contact");
   };
   const handleNavigateAbout = () => {
-    navigate("/about")
-  }
-
+    navigate("/about");
+  };
+  
   return (
     <Box className={styles.homeContainer}>
-      <Typography
-        variant="h3"
-        className={styles.title}
-        fontFamily="sf pixelate"
-      >
-        Bem-vindo ao meu portfólio
-      </Typography>
+      {/* section 1 */}
+      <Box className={styles.contentContainer}>
+        <Typography
+          variant="h3"
+          className={styles.title}
+          fontFamily="sf pixelate"
+        >
+          Oi, eu sou <span className={styles.highlight}>Diogo</span>!
+        </Typography>
+
+        <Box className={styles.bannerContent}>
+          <Box className={styles.backgroudAnimate}>
+            <AnimatedBackground />
+          </Box>
+          <Avatar
+            alt="Diogo"
+            src={fotoPerfil}
+            className={styles.avatar}
+            sx={{ width: 72, height: 72 }}
+          />
+          <Typography variant="body1" className={styles.description}>
+            Desenvolvo aplicações com foco em entregar soluções de alta
+            performance, trago uma visão{" "}
+            <span className={styles.highlight}>técnica</span> integrada com{" "}
+            <span className={styles.highlight}>UX</span> e{" "}
+            <span className={styles.highlight}>Growth</span>, otimizando{" "}
+            <span className={styles.highlight}>sistemas</span> web.
+          </Typography>
+        </Box>
+        
+      <BarTechIcons/>
+      </Box>
+      <KeyboardDoubleArrowDownIcon className={styles.arrowDown} fontSize="large" sx={{mb:3}} />
+          
+
+      {/* section 2 */}
+      <Box className={styles.contentContainer}>
+        <Typography variant="h5" className={styles.subTitle} sx={{mb:2}}>
+          Conheça minha Trajetoria
+        </Typography>
+
+        <Button
+          className={styles.contentContainerBox}
+          variant="outlined"
+          size="small"
+          endIcon={<KeyboardDoubleArrowRightIcon />}
+          onClick={handleNavigateAbout}
+        >
+          <span>Sobre mim</span>
+        </Button>
+      </Box>
+      
+      <KeyboardDoubleArrowDownIcon className={styles.arrowDown} fontSize="large" sx={{mb:3}}/>
+      {/* section 3 */}
       <Box
-        className={styles.contentContact}
+        className={styles.contentContainer}
         display="flex"
         flexDirection="column"
       >
+        <Typography variant="h5" className={styles.subTitle} sx={{mb:2}}>
+          Minhas Redes
+        </Typography>
         <Box
           className={styles.iconContainer}
           display="flex"
@@ -76,63 +128,15 @@ const Home: React.FC = () => {
             <RedditIcon fontSize="large" style={{ margin: "0 10px" }} />
           </a>
         </Box>
+
         <Button
           variant="outlined"
           size="small"
           endIcon={<KeyboardDoubleArrowRightIcon />}
           onClick={handleNavigateContact}
         >
-          Contact
+          <span>Contact</span>
         </Button>
-      </Box>
-
-      <Box className={styles.contentContainer}>
-        <Box>
-          <Box className={styles.bannerContent}>
-            <Box className={styles.backgroudAnimate}>
-              <AnimatedBackground />
-            </Box>
-            <Avatar
-              alt="Diogo"
-              src={fotoPerfil}
-              className={styles.avatar}
-              sx={{ width: 72, height: 72 }}
-            />
-            <Typography variant="body1" className={styles.description}>
-              Olá, eu sou Diogo, desenvolvedor de software com foco em entregar
-              soluções de alta performance.
-            </Typography>
-            <Typography variant="body1" className={styles.description}>
-              Tenho experiência em TypeScript e React, otimizando aplicações e
-              automatizando processos.
-            </Typography>
-            <Typography variant="body1" className={styles.description}>
-              Como desenvolvedor Full Stack na Clubflex, trago uma visão técnica
-              integrada com UX e Growth.
-            </Typography>
-            <Typography variant="body1" className={styles.description}>
-              Casado e pai, estou sempre buscando aprender e me aperfeiçoar para
-              liderar com eficiência.
-            </Typography>
-          </Box>
-
-          {/* criar divisão */}
-          <Divider style={{ margin: "2rem 0", background: "aliceblue" }} />
-
-          <Box className={styles.slideConteiner}>
-            <Typography variant="h5" className={styles.subTitle}>
-              Conheça minha Trajetoria
-            </Typography>
-            <Button
-              variant="outlined"
-              size="small"
-              endIcon={<KeyboardDoubleArrowRightIcon />}
-              onClick={handleNavigateAbout}
-            >
-              Sobre mim
-            </Button>
-          </Box>
-        </Box>
       </Box>
     </Box>
   );
