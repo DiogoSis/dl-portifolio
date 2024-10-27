@@ -1,7 +1,8 @@
-import React from "react";
-import { Box, Typography, List, ListItem, Button } from "@mui/material";
+import React, { useState } from "react";
+import { Box, Typography, List, ListItem, Button, Collapse } from "@mui/material";
 import styles from "./CardFormation.module.css";
 import SchoolIcon from '@mui/icons-material/School';
+import { ExpandLess,ExpandMore } from "@mui/icons-material";
 
 interface FormationProps {
   name: string;
@@ -18,6 +19,8 @@ const CardFormation: React.FC<FormationProps> = ({
   area,
   materias,
 }) => {
+  const [open, setOpen] = useState(false)
+
   return (
     <Box className={styles.card}>
       <Typography mb={2} className={styles.nome}>{name}</Typography>
@@ -28,15 +31,27 @@ const CardFormation: React.FC<FormationProps> = ({
       </Box>
 
       <Box>
-        <Typography variant="body1" className={styles.materiasTitle}>Matérias:</Typography>
-        <List className={styles.materiasList}>
-            {materias.map((materia, index) => (
-            <ListItem key={index} className={styles.materiaItem}>
-                {materia}
-            </ListItem>
-            ))}
-        </List>
+        <Button
+          style={{ margin:"18px" }}
+          onClick={() => setOpen(!open)}
+          className={styles.collapseButton}
+          size="small"
+          startIcon={open ? <ExpandLess /> : <ExpandMore />}
+        >
+          Disciplinas Realizadas
+        </Button>
+        <Collapse in={open}>
+          <Typography variant="body1" className={styles.materiasTitle}>Matérias:</Typography>
+          <List className={styles.materiasList}>
+              {materias.map((materia, index) => (
+                <ListItem key={index} className={styles.materiaItem}>
+                  {materia}
+              </ListItem>
+              ))}
+          </List>
+        </Collapse>
       </Box>
+
       <Button 
           variant="contained" 
           size="small"

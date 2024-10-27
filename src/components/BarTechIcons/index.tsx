@@ -9,7 +9,8 @@ const BarTechIcons: React.FC = () => {
         url:string 
     }[]>([])
     useEffect(() => {
-        setIcons(iconsData)
+        const allIcons = [...iconsData, ...iconsData]
+        setIcons(allIcons)
     }, [])
 
   return (
