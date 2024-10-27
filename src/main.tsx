@@ -6,7 +6,7 @@ import { createTheme } from '@mui/material'
 
 const theme = createTheme({
   typography: {
-    fontFamily: 'Courier New, monospace', // Fontes monoespaçadas
+    fontFamily: 'regular, monospace', // Fontes monoespaçadas
   },
   palette: {
     primary: {
