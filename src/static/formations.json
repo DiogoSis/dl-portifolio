@@ -62,5 +62,22 @@
             "Paradigmas de Linguagens de Programação em Python",
             "Estruturas de Dados"
         ]
+    },
+    {
+        "id": 5,
+        "name": "Terraform - Do Básico ao Avançado",
+        "conclusion": "20/11/2024",
+        "certificate": "https://udemy-certificate.s3.amazonaws.com/pdf/UC-dda8d162-4229-4ec3-873f-f9b774766f4f.pdf",
+        "area": "Devops",
+        "materias": [
+            "Funções Basicas",
+            "Variáveis e Outputs",
+            "Terraform State",
+            "Provisioners",
+            "Modulos",
+            "Meta Arguments",
+            "Expressões",
+            "Terraform em Pipelines"
+        ]
     }
 ]

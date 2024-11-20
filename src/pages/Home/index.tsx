@@ -92,41 +92,41 @@ const Home: React.FC = () => {
           justifyContent="center"
           marginBottom={4}
         >
-          <a
+          <Button
             href="https://linkedin.com/in/diogosis"
             target="_blank"
             rel="noopener noreferrer"
           >
             <LinkedInIcon fontSize="large" style={{ margin: "0 10px" }} />
-          </a>
-          <a
+          </Button>
+          <Button
             href="https://github.com/DiogoSis"
             target="_blank"
             rel="noopener noreferrer"
           >
             <GitHubIcon fontSize="large" style={{ margin: "0 10px" }} />
-          </a>
-          <a
+          </Button>
+          <Button
             href="https://wa.me/21970669909?text=Oi%20estou%20vindo%20do%20site."
             target="_blank"
             rel="noopener noreferrer"
           >
             <WhatsAppIcon fontSize="large" style={{ margin: "0 10px" }} />
-          </a>
-          <a
+          </Button>
+          <Button
             href="https://t.me/21970669909?text=Oi%20estou%20vindo%20do%20site."
             target="_blank"
             rel="noopener noreferrer"
           >
             <TelegramIcon fontSize="large" style={{ margin: "0 10px" }} />
-          </a>
-          <a
-            href="https://www.reddit.com/user/seu-usuario"
+          </Button>
+          <Button
+            href="https://www.reddit.com/user/Diogo-Dev/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <RedditIcon fontSize="large" style={{ margin: "0 10px" }} />
-          </a>
+          </Button>
         </Box>
 
         <Button
