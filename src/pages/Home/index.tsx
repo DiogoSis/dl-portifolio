@@ -21,7 +21,7 @@ const Home: React.FC = () => {
   const handleNavigateAbout = () => {
     navigate("/about");
   };
-  
+
   return (
     <Box className={styles.homeContainer}>
       {/* section 1 */}
@@ -53,15 +53,34 @@ const Home: React.FC = () => {
             <span className={styles.highlight}>sistemas</span> web.
           </Typography>
         </Box>
-        
-      <BarTechIcons/>
       </Box>
-      <KeyboardDoubleArrowDownIcon className={styles.arrowDown} fontSize="large" sx={{mb:3}} />
-          
+      <KeyboardDoubleArrowDownIcon className={styles.arrowDown} fontSize="large" sx={{ mb: 3 }} />
+
+      {/*curriculo*/}
+      <Box className={styles.contentContainer}>
+        <Typography variant="h5" className={styles.subTitle} sx={{ mb: 2 }}>
+          Acesse meu Curriculo
+        </Typography>
+
+        <Button
+          className={styles.contentContainerBox}
+          variant="outlined"
+          size="small"
+          endIcon={<KeyboardDoubleArrowRightIcon />}
+          href="http://curriculo-generator-static.s3-website-us-east-1.amazonaws.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>Curriculo</span>
+        </Button>
+      </Box>
+
+      <KeyboardDoubleArrowDownIcon className={styles.arrowDown} fontSize="large" sx={{ mb: 3 }} />
+
 
       {/* section 2 */}
       <Box className={styles.contentContainer}>
-        <Typography variant="h5" className={styles.subTitle} sx={{mb:2}}>
+        <Typography variant="h5" className={styles.subTitle} sx={{ mb: 2 }}>
           Conheça minha Trajetoria
         </Typography>
 
@@ -74,16 +93,17 @@ const Home: React.FC = () => {
         >
           <span>Sobre mim</span>
         </Button>
+        <BarTechIcons />
       </Box>
-      
-      <KeyboardDoubleArrowDownIcon className={styles.arrowDown} fontSize="large" sx={{mb:3}}/>
+
+      <KeyboardDoubleArrowDownIcon className={styles.arrowDown} fontSize="large" sx={{ mb: 3 }} />
       {/* section 3 */}
       <Box
         className={styles.contentContainer}
         display="flex"
         flexDirection="column"
       >
-        <Typography variant="h5" className={styles.subTitle} sx={{mb:2}}>
+        <Typography variant="h5" className={styles.subTitle} sx={{ mb: 2 }}>
           Minhas Redes
         </Typography>
         <Box
