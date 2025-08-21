@@ -1,58 +1,58 @@
 .skillItem {
-    display: flex;
-    align-items: flex-start;
-    border: dotted 1px #00ff00; /* Borda inicial */
-    padding: 10px;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer; 
+  display: flex;
+  align-items: flex-start;
+  border: dotted 1px #00ff00; /* Borda inicial */
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.skillItem::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: 5px solid #00ff00;
+  opacity: 0; /* Começa invisível */
+  transition: opacity 0.3s ease; /* Aumentando o tempo para suavizar a animação */
+}
+
+.skillItem:hover::before,
+.skillItem.active::before {
+  opacity: 1; /* Torna a borda visível */
+}
+
+.icon {
+  width: 42px;
+  height: 42px;
+  margin-right: 18px;
+}
+
+.textContainer {
+  margin-right: 42px;
+}
+
+.starContainer {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.starContainer .MuiSvgIcon-root {
+  color: #ffd700;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.5;
   }
-  
-  .skillItem::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    outline: 5px solid #00ff00; 
-    opacity: 0; /* Começa invisível */
-    transition: opacity 0.3s ease; /* Aumentando o tempo para suavizar a animação */
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
   }
-  
-  .skillItem:hover::before,
-  .skillItem.active::before { 
-    opacity: 1; /* Torna a borda visível */
-  }
-  
-  .icon {
-    width: 42px;
-    height: 42px;
-    margin-right: 18px;
-  }
-  
-  .textContainer {
-    margin-right: 42px;
-  }
-  
-  .starContainer {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-  }
-  
-  .starContainer .MuiSvgIcon-root {
-    color: #ffd700; 
-  }
-  
-  @keyframes pulse {
-    0%, 100% {
-      transform: scale(1);
-      opacity: 0.5;
-    }
-    50% {
-      transform: scale(1.05);
-      opacity: 1;
-    }
-  }
-  
+}

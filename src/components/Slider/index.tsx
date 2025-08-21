@@ -21,24 +21,24 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
     };
 
     loadImages();
-  }, [images])
+  }, [images]);
 
   return (
     <Box className={styles.sliderContainer}>
-      <Swiper 
+      <Swiper
         modules={[Pagination, EffectCube]}
-        pagination={{clickable:true}}
-        spaceBetween={5} 
+        pagination={{ clickable: true }}
+        spaceBetween={5}
         slidesPerView={1}
-        effect='cube'
+        effect="cube"
       >
         {loadedImages.map((image, index) => (
           <SwiperSlide key={index}>
             <Box className={styles.imageContainer}>
-              <img 
-                src={image} 
-                alt={`slide-${index}`} 
-                className={styles.image} 
+              <img
+                src={image}
+                alt={`slide-${index}`}
+                className={styles.image}
               />
             </Box>
           </SwiperSlide>

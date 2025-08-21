@@ -1,170 +1,170 @@
 [
-    {
-        "id": 1,
-        "name": "WordPress",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
-        "rating": 5,
-        "type": "plataforma"
-    },
-    {
-        "id": 2,
-        "name": "HTML",
-        "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",
-        "rating": 5,
-        "type":"linguagem"
-    },
-    {
-        "id": 3,
-        "name": "CSS",
-        "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg",
-        "rating": 5,
-        "type":"linguagem"
-    },
-    {
-        "id": 4,
-        "name": "JavaScript",
-        "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg",
-        "rating": 5,
-        "type":"linguagem"
-    },
-    {
-        "id": 5,
-        "name": "TypeScript",
-        "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg",
-        "rating": 5,
-        "type":"linguagem"
-    },
-    {
-        "id": 6,
-        "name": "Node.js",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-        "rating": 4,
-        "type":"runtime"
-    },
-    {
-        "id": 7,
-        "name": "NPM",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg",
-        "rating": 4,
-        "type": "gerenciador de pacotes"
-    },
-    {
-        "id": 8,
-        "name": "Express",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-        "rating": 3,
-        "type": "biblioteca e framework"
-    },
-    {
-        "id": 9,
-        "name": "React",
-        "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg",
-        "rating": 5,
-        "type": "biblioteca e framework"
-    },
-    {
-        "id": 10,
-        "name": "Next.js",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-        "rating": 3,
-        "type": "biblioteca e framework"
-    },
-    {
-        "id": 11,
-        "name": "Python",
-        "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
-        "rating": 2,
-        "type": "linguagem"
-    },
-    {
-        "id": 12,
-        "name": "Java",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
-        "rating": 1,
-        "type": "linguagem"
-    },
-    {
-        "id": 13,
-        "name": "Ruby",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original-wordmark.svg",
-        "rating": 1,
-        "type": "linguagem"
-    },
-    {
-        "id": 14,
-        "name": "Rails",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain-wordmark.svg",
-        "rating": 1,
-        "type": "biblioteca e framework"
-    },
-    {
-        "id": 15,
-        "name": "PostgreSQL",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
-        "rating": 3,
-        "type": "banco de dados"
-    },
-    {
-        "id": 16,
-        "name": "MySQL",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
-        "rating": 3,
-        "type": "banco de dados"
-    },
-    {
-        "id": 17,
-        "name": "AWS",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
-        "rating": 4,
-        "type": "plataforma"
-    },
-    {
-        "id": 18,
-        "name": "Terraform",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original-wordmark.svg",
-        "rating": 4,
-        "type": "infraestrutura como código"
-    },
-    {
-        "id": 19,
-        "name": "Docker",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg",
-        "rating": 1,
-        "type": "contenedorização"
-    },
-    {
-        "id": 20,
-        "name": "NestJS",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original-wordmark.svg",
-        "rating": 2,
-        "type": "biblioteca e framework"
-    },
-    {
-        "id": 21,
-        "name": "Git",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg",
-        "rating": 5,
-        "type": "controle de versão"
-    },
-    {
-        "id": 22,
-        "name": "UML",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unifiedmodelinglanguage/unifiedmodelinglanguage-original.svg",
-        "rating": 4,
-        "type": "linguagem de modelagem"
-    },
-    {
-        "id": 23,
-        "name": "Linux",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",
-        "rating": 5,
-        "type": "sistema operacional"
-    },
-    {
-        "id": 24,
-        "name": "Debian",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/debian/debian-original-wordmark.svg",
-        "rating": 5,
-        "type": "sistema operacional"
-    }
+  {
+    "id": 1,
+    "name": "WordPress",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg",
+    "rating": 5,
+    "type": "plataforma"
+  },
+  {
+    "id": 2,
+    "name": "HTML",
+    "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg",
+    "rating": 5,
+    "type": "linguagem"
+  },
+  {
+    "id": 3,
+    "name": "CSS",
+    "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg",
+    "rating": 5,
+    "type": "linguagem"
+  },
+  {
+    "id": 4,
+    "name": "JavaScript",
+    "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg",
+    "rating": 5,
+    "type": "linguagem"
+  },
+  {
+    "id": 5,
+    "name": "TypeScript",
+    "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg",
+    "rating": 5,
+    "type": "linguagem"
+  },
+  {
+    "id": 6,
+    "name": "Node.js",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    "rating": 4,
+    "type": "runtime"
+  },
+  {
+    "id": 7,
+    "name": "NPM",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg",
+    "rating": 4,
+    "type": "gerenciador de pacotes"
+  },
+  {
+    "id": 8,
+    "name": "Express",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+    "rating": 3,
+    "type": "biblioteca e framework"
+  },
+  {
+    "id": 9,
+    "name": "React",
+    "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg",
+    "rating": 5,
+    "type": "biblioteca e framework"
+  },
+  {
+    "id": 10,
+    "name": "Next.js",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+    "rating": 3,
+    "type": "biblioteca e framework"
+  },
+  {
+    "id": 11,
+    "name": "Python",
+    "icon": "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+    "rating": 2,
+    "type": "linguagem"
+  },
+  {
+    "id": 12,
+    "name": "Java",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
+    "rating": 1,
+    "type": "linguagem"
+  },
+  {
+    "id": 13,
+    "name": "Ruby",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original-wordmark.svg",
+    "rating": 1,
+    "type": "linguagem"
+  },
+  {
+    "id": 14,
+    "name": "Rails",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain-wordmark.svg",
+    "rating": 1,
+    "type": "biblioteca e framework"
+  },
+  {
+    "id": 15,
+    "name": "PostgreSQL",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+    "rating": 3,
+    "type": "banco de dados"
+  },
+  {
+    "id": 16,
+    "name": "MySQL",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
+    "rating": 3,
+    "type": "banco de dados"
+  },
+  {
+    "id": 17,
+    "name": "AWS",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+    "rating": 4,
+    "type": "plataforma"
+  },
+  {
+    "id": 18,
+    "name": "Terraform",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original-wordmark.svg",
+    "rating": 4,
+    "type": "infraestrutura como código"
+  },
+  {
+    "id": 19,
+    "name": "Docker",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg",
+    "rating": 1,
+    "type": "contenedorização"
+  },
+  {
+    "id": 20,
+    "name": "NestJS",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original-wordmark.svg",
+    "rating": 2,
+    "type": "biblioteca e framework"
+  },
+  {
+    "id": 21,
+    "name": "Git",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg",
+    "rating": 5,
+    "type": "controle de versão"
+  },
+  {
+    "id": 22,
+    "name": "UML",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unifiedmodelinglanguage/unifiedmodelinglanguage-original.svg",
+    "rating": 4,
+    "type": "linguagem de modelagem"
+  },
+  {
+    "id": 23,
+    "name": "Linux",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",
+    "rating": 5,
+    "type": "sistema operacional"
+  },
+  {
+    "id": 24,
+    "name": "Debian",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/debian/debian-original-wordmark.svg",
+    "rating": 5,
+    "type": "sistema operacional"
+  }
 ]

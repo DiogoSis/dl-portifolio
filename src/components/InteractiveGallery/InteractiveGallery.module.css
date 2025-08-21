@@ -1,0 +1,308 @@
+.galleryContainer {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.galleryTitle {
+  color: #00ff00 !important;
+  font-family: 'SF Pixelate', monospace !important;
+  text-align: center;
+  margin-bottom: 2rem !important;
+  text-shadow: 0 0 15px rgba(0, 255, 0, 0.4);
+}
+
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  color: #b0b0b0;
+}
+
+.imageGrid {
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+.imageCard {
+  position: relative;
+  cursor: pointer;
+  border-radius: 12px !important;
+  overflow: hidden;
+  background: #1a1a1a !important;
+  border: 2px solid transparent;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+}
+
+.imageCard:hover {
+  border-color: #00ff00 !important;
+  box-shadow: 0 8px 25px rgba(0, 255, 0, 0.2) !important;
+  transform: translateY(-2px);
+}
+
+.thumbnailImage {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  transition: transform 0.3s ease !important;
+}
+
+.imageCard:hover .thumbnailImage {
+  transform: scale(1.1);
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.imageCard:hover .imageOverlay {
+  opacity: 1;
+}
+
+.zoomIcon {
+  color: #00ff00 !important;
+  font-size: 2rem !important;
+  filter: drop-shadow(0 0 8px rgba(0, 255, 0, 0.6));
+}
+
+/* Modal Styles */
+.imageModal .MuiDialog-paper {
+  background: transparent !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  max-height: none !important;
+  max-width: none !important;
+}
+
+.modalContent {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.modalControls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+  z-index: 1000;
+}
+
+.imageInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.imageTitle {
+  color: #00ff00 !important;
+  font-family: 'SF Pixelate', monospace !important;
+  margin: 0 !important;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.4);
+}
+
+.imageCounter {
+  color: #b0b0b0 !important;
+  font-size: 0.9rem !important;
+}
+
+.controlButtons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.controlBtn, .closeBtn {
+  color: #00ff00 !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+  border: 1px solid rgba(0, 255, 0, 0.3) !important;
+  transition: all 0.3s ease !important;
+}
+
+.controlBtn:hover, .closeBtn:hover {
+  background: rgba(0, 255, 0, 0.1) !important;
+  border-color: #00ff00 !important;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3) !important;
+}
+
+.zoomLevel {
+  color: #00ff00 !important;
+  font-family: monospace !important;
+  font-size: 0.9rem !important;
+  min-width: 50px;
+  text-align: center;
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 80px 60px 60px;
+}
+
+.modalImage {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease !important;
+  user-select: none;
+}
+
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #00ff00 !important;
+  background: rgba(0, 0, 0, 0.7) !important;
+  border: 2px solid rgba(0, 255, 0, 0.3) !important;
+  width: 56px !important;
+  height: 56px !important;
+  transition: all 0.3s ease !important;
+  backdrop-filter: blur(10px);
+}
+
+.navButton:hover {
+  background: rgba(0, 255, 0, 0.1) !important;
+  border-color: #00ff00 !important;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.4) !important;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.navButton svg {
+  font-size: 2rem !important;
+}
+
+.prevButton {
+  left: 20px;
+}
+
+.nextButton {
+  right: 20px;
+}
+
+.imageDescription {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+  padding: 2rem;
+  text-align: center;
+}
+
+.imageDescription p {
+  color: #b0b0b0 !important;
+  font-size: 1.1rem !important;
+  margin: 0 !important;
+  line-height: 1.6;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .modalControls {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .imageInfo {
+    text-align: center;
+  }
+
+  .controlButtons {
+    justify-content: center;
+  }
+
+  .imageContainer {
+    padding: 120px 20px 80px;
+  }
+
+  .navButton {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  .navButton svg {
+    font-size: 1.5rem !important;
+  }
+
+  .prevButton {
+    left: 10px;
+  }
+
+  .nextButton {
+    right: 10px;
+  }
+
+  .imageDescription {
+    padding: 1.5rem 1rem;
+  }
+
+  .imageDescription p {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .imageGrid .MuiGrid-item {
+    padding: 4px !important;
+  }
+
+  .imageCard {
+    border-radius: 8px !important;
+  }
+
+  .galleryTitle {
+    font-size: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+/* Animações customizadas */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.zoomIcon {
+  animation: pulse 2s infinite;
+}
+
+/* Scroll suave para navegação */
+.imageContainer {
+  scroll-behavior: smooth;
+}
+
+/* Estilo para seleção de imagem */
+.imageCard.selected {
+  border-color: #00ff00 !important;
+  box-shadow: 0 0 25px rgba(0, 255, 0, 0.4) !important;
+}

@@ -1,5 +1,11 @@
 import React from 'react';
-import { Drawer, List, ListItem, ListItemButton, ListItemText } from '@mui/material';
+import {
+  Drawer,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
+} from '@mui/material';
 import { Link } from 'react-router-dom';
 import styles from './Sidebar.module.css';
 import HomeIcon from '@mui/icons-material/Home';
@@ -15,20 +21,23 @@ interface SidebarProps {
 }
 
 const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
-
   const menuItems = [
-    {text: 'Home', icon:<HomeIcon />, path: '/'},
-    {text: 'Sobre mim', icon:<ArchitectureIcon />, path: '/about'},
-    {text: 'Projetos', icon:<ProjectIcon />, path: '/projects'},
-    {text: 'Conhecimentos', icon:<SkillsIcon />, path: '/skills'},
-    {text: 'Certificados', icon:<CertificatesIcon />, path: '/certificates'},
-    {text: 'Contato', icon:<ContactIcon />, path: '/contact'}
-  ]
+    { text: 'Home', icon: <HomeIcon />, path: '/' },
+    { text: 'Sobre mim', icon: <ArchitectureIcon />, path: '/about' },
+    { text: 'Projetos', icon: <ProjectIcon />, path: '/projects' },
+    { text: 'Conhecimentos', icon: <SkillsIcon />, path: '/skills' },
+    { text: 'Certificados', icon: <CertificatesIcon />, path: '/certificates' },
+    { text: 'Contato', icon: <ContactIcon />, path: '/contact' },
+  ];
 
   return (
-    <Drawer classes={{paper:styles.drawerPaper}} open={isOpen} onClose={toggleSidebar}>
+    <Drawer
+      classes={{ paper: styles.drawerPaper }}
+      open={isOpen}
+      onClose={toggleSidebar}
+    >
       <List>
-        {menuItems.map(({ text, icon, path}) => (
+        {menuItems.map(({ text, icon, path }) => (
           <ListItem
             key={text}
             className={styles.listItem}
@@ -46,6 +55,6 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
       </List>
     </Drawer>
   );
-}
+};
 
 export default Sidebar;

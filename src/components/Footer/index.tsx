@@ -4,11 +4,12 @@ import DigitalSign from '../DigitalSign';
 
 const Footer: React.FC = () => {
   return (
-    <Box 
-      component="footer" 
-      p={1} bgcolor="text.secondary" 
-      color="white" 
-      textAlign="center" 
+    <Box
+      component="footer"
+      p={1}
+      bgcolor="text.secondary"
+      color="white"
+      textAlign="center"
       sx={{
         position: 'fixed',
         bottom: 0,
@@ -23,9 +24,7 @@ const Footer: React.FC = () => {
       <Box>
         <DigitalSign text="<< -- site em criação -- || -- sempre aberto a ideias -- << -- <<" />
       </Box>
-      <Typography variant="body2">
-        &copy; 2024 Diogo de Assis Luna.
-      </Typography>
+      <Typography variant="body2">&copy; 2024 Diogo de Assis Luna.</Typography>
     </Box>
   );
 };

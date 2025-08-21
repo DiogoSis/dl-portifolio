@@ -11,17 +11,20 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
   return (
     <AppBar position="fixed" className={styles.appBar}>
       <Toolbar className={styles.toolbar}>
-        <IconButton 
+        <IconButton
           className={styles.menuButton}
-          edge="start" 
-          aria-label="menu" 
-          onClick={toggleSidebar}>
+          edge="start"
+          aria-label="menu"
+          onClick={toggleSidebar}
+        >
           <MenuIcon />
         </IconButton>
-        <Typography className={styles.title} variant="h6">Diogo Luna</Typography>
+        <Typography className={styles.title} variant="h6">
+          Diogo Luna
+        </Typography>
       </Toolbar>
     </AppBar>
   );
-}
+};
 
 export default Header;

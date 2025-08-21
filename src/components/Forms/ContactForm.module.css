@@ -1,0 +1,182 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.formPaper {
+  padding: 3rem;
+  border-radius: 16px !important;
+  background: linear-gradient(135deg, #1e1e1e 0%, #2a2a2a 100%) !important;
+  border: 1px solid #333;
+  box-shadow: 0 8px 32px rgba(0, 255, 0, 0.1) !important;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.title {
+  color: #00ff00 !important;
+  font-family: 'SF Pixelate', monospace !important;
+  margin-bottom: 1rem !important;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+}
+
+.subtitle {
+  color: #b0b0b0 !important;
+  font-size: 1.1rem !important;
+  line-height: 1.6;
+}
+
+.form {
+  width: 100%;
+}
+
+.textField {
+  margin-bottom: 1rem !important;
+}
+
+.textField .MuiOutlinedInput-root {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+}
+
+.textField .MuiOutlinedInput-root:hover {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.textField .MuiOutlinedInput-root.Mui-focused {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 0 0 2px rgba(0, 255, 0, 0.2) !important;
+}
+
+.textField .MuiOutlinedInput-notchedOutline {
+  border-color: #333 !important;
+}
+
+.textField .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #555 !important;
+}
+
+.textField .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #00ff00 !important;
+  border-width: 2px !important;
+}
+
+.textField .MuiInputLabel-root {
+  color: #b0b0b0 !important;
+}
+
+.textField .MuiInputLabel-root.Mui-focused {
+  color: #00ff00 !important;
+}
+
+.textField .MuiOutlinedInput-input {
+  color: #ffffff !important;
+  font-size: 1rem !important;
+}
+
+.textField .MuiFormHelperText-root {
+  color: #888 !important;
+  margin-left: 0 !important;
+  margin-top: 8px !important;
+}
+
+.textField .MuiFormHelperText-root.Mui-error {
+  color: #ff4444 !important;
+}
+
+.inputIcon {
+  color: #00ff00 !important;
+  margin-right: 12px !important;
+  opacity: 0.8;
+}
+
+.submitButton {
+  background: linear-gradient(45deg, #00ff00, #00cc00) !important;
+  color: #000000 !important;
+  font-weight: 600 !important;
+  font-size: 1.1rem !important;
+  padding: 14px 32px !important;
+  border-radius: 8px !important;
+  margin-top: 1.5rem !important;
+  text-transform: none !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 16px rgba(0, 255, 0, 0.3) !important;
+}
+
+.submitButton:hover {
+  background: linear-gradient(45deg, #00cc00, #00aa00) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(0, 255, 0, 0.4) !important;
+}
+
+.submitButton:disabled {
+  background: #333 !important;
+  color: #666 !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.alert {
+  margin-bottom: 2rem !important;
+  border-radius: 8px !important;
+}
+
+.alert.MuiAlert-standardSuccess {
+  background-color: rgba(0, 255, 0, 0.1) !important;
+  color: #00ff00 !important;
+  border: 1px solid rgba(0, 255, 0, 0.3) !important;
+}
+
+.alert.MuiAlert-standardError {
+  background-color: rgba(255, 68, 68, 0.1) !important;
+  color: #ff4444 !important;
+  border: 1px solid rgba(255, 68, 68, 0.3) !important;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .formPaper {
+    padding: 2rem 1.5rem;
+  }
+
+  .title {
+    font-size: 1.8rem !important;
+  }
+
+  .subtitle {
+    font-size: 1rem !important;
+  }
+}
+
+/* Dark theme específico para formulário */
+.textField .MuiInputBase-input::placeholder {
+  color: #666 !important;
+  opacity: 1 !important;
+}
+
+/* Animações suaves */
+.textField .MuiOutlinedInput-root,
+.submitButton {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Estilo para textarea */
+.textField .MuiOutlinedInput-root.MuiInputBase-multiline {
+  padding: 12px !important;
+}
+
+.textField
+  .MuiOutlinedInput-root.MuiInputBase-multiline
+  .MuiOutlinedInput-input {
+  padding: 0 !important;
+  min-height: 120px !important;
+}

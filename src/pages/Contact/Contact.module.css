@@ -2,60 +2,94 @@
 
 /* Título da página */
 .title {
-    margin-bottom: 24px;
-    text-align: center;
-  }
-  
-  /* Formulário */
-  .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 800px; /* Ajusta a largura do formulário no desktop */
-    margin: 0 auto;
-  }
-  
-  /* Campos do formulário */
-  .input {
-    background-color: #9ebd9eb0; /* Verde escuro */
-    color: white!important; /* Texto em branco */
-  }
-  
-  .label {
-    color: rgb(224, 224, 224); /* Label em branco */
-  }
-  
-  /* Botão de envio */
-  .MuiButton-contained {
-    margin-top: 16px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* Formulário */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px; /* Ajusta a largura do formulário no desktop */
+  margin: 0 auto;
+}
+
+/* Campos do formulário */
+.input {
+  background-color: #9ebd9eb0; /* Verde escuro */
+  color: white !important; /* Texto em branco */
+}
+
+.label {
+  color: rgb(224, 224, 224); /* Label em branco */
+}
+
+/* Botão de envio */
+.MuiButton-contained {
+  margin-top: 16px;
+}
+
+.container {
+  min-height: 80vh;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerSection {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+}
+
+.pageTitle {
+  color: #00ff00 !important;
+  font-family: 'SF Pixelate', monospace !important;
+  margin-bottom: 1rem !important;
+  text-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+  font-weight: 700 !important;
+}
+
+.pageSubtitle {
+  color: #b0b0b0 !important;
+  font-weight: 300 !important;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem 0;
   }
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    transition: all 0.3s ease;
+  .headerSection {
+    margin-bottom: 2rem;
+    padding: 1rem 0;
   }
-  
-  .buttonContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+
+  .pageTitle {
+    font-size: 2rem !important;
   }
-  
-  form {
-    animation: slideIn 0.5s ease forwards;
+
+  .pageSubtitle {
+    font-size: 1rem !important;
+    padding: 0 1rem;
   }
-  
-  @keyframes slideIn {
-    from {
-      transform: translateX(100%);
-    }
-    to {
-      transform: translateX(0);
-    }
+}
+
+form {
+  animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
   }
-  
-  
+  to {
+    transform: translateX(0);
+  }
+}

@@ -12,14 +12,14 @@ body {
   box-sizing: border-box;
   background-color: #1b1b1b;
   color: #00ff00;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .main-content {
   display: flex;
 }
 
-@font-face{
+@font-face {
   font-family: 'SF Pixelate';
   src: url('../../assets/font/SF\ Pixelate.ttf') format('truetype');
   font-weight: normal;

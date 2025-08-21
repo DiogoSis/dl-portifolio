@@ -1,25 +1,32 @@
-import React from "react";
-import { Box, Typography, Avatar, Button } from "@mui/material";
-import styles from "./Home.module.css";
-import fotoPerfil from "../../assets/photos/000.jpg";
-import { AnimatedBackground } from "../../components/AnimateBackgound";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import TelegramIcon from "@mui/icons-material/Telegram";
-import RedditIcon from "@mui/icons-material/Reddit";
-import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
-import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
-import { useNavigate } from "react-router-dom";
-import BarTechIcons from "../../components/BarTechIcons";
+// External libraries
+import React from 'react';
+import { Box, Typography, Avatar, Button } from '@mui/material';
+import {
+  LinkedIn as LinkedInIcon,
+  GitHub as GitHubIcon,
+  WhatsApp as WhatsAppIcon,
+  Telegram as TelegramIcon,
+  Reddit as RedditIcon,
+  KeyboardDoubleArrowRight as KeyboardDoubleArrowRightIcon,
+  KeyboardDoubleArrowDown as KeyboardDoubleArrowDownIcon,
+} from '@mui/icons-material';
+import { useNavigate } from 'react-router-dom';
+
+// Internal components
+import { AnimatedBackground } from '../../components/AnimateBackgound';
+import BarTechIcons from '../../components/BarTechIcons';
+
+// Assets
+import fotoPerfil from '../../assets/photos/000.jpg';
+import styles from './Home.module.css';
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
   const handleNavigateContact = () => {
-    navigate("/contact");
+    navigate('/contact');
   };
   const handleNavigateAbout = () => {
-    navigate("/about");
+    navigate('/about');
   };
 
   return (
@@ -46,15 +53,19 @@ const Home: React.FC = () => {
           />
           <Typography variant="body1" className={styles.description}>
             Desenvolvo aplicações com foco em entregar soluções de alta
-            performance, trago uma visão{" "}
-            <span className={styles.highlight}>técnica</span> integrada com{" "}
-            <span className={styles.highlight}>UX</span> e{" "}
-            <span className={styles.highlight}>Growth</span>, otimizando{" "}
+            performance, trago uma visão{' '}
+            <span className={styles.highlight}>técnica</span> integrada com{' '}
+            <span className={styles.highlight}>UX</span> e{' '}
+            <span className={styles.highlight}>Growth</span>, otimizando{' '}
             <span className={styles.highlight}>sistemas</span> web.
           </Typography>
         </Box>
       </Box>
-      <KeyboardDoubleArrowDownIcon className={styles.arrowDown} fontSize="large" sx={{ mb: 3 }} />
+      <KeyboardDoubleArrowDownIcon
+        className={styles.arrowDown}
+        fontSize="large"
+        sx={{ mb: 3 }}
+      />
 
       {/*curriculo*/}
       <Box className={styles.contentContainer}>
@@ -75,8 +86,11 @@ const Home: React.FC = () => {
         </Button>
       </Box>
 
-      <KeyboardDoubleArrowDownIcon className={styles.arrowDown} fontSize="large" sx={{ mb: 3 }} />
-
+      <KeyboardDoubleArrowDownIcon
+        className={styles.arrowDown}
+        fontSize="large"
+        sx={{ mb: 3 }}
+      />
 
       {/* section 2 */}
       <Box className={styles.contentContainer}>
@@ -96,7 +110,11 @@ const Home: React.FC = () => {
         <BarTechIcons />
       </Box>
 
-      <KeyboardDoubleArrowDownIcon className={styles.arrowDown} fontSize="large" sx={{ mb: 3 }} />
+      <KeyboardDoubleArrowDownIcon
+        className={styles.arrowDown}
+        fontSize="large"
+        sx={{ mb: 3 }}
+      />
       {/* section 3 */}
       <Box
         className={styles.contentContainer}
@@ -117,35 +135,35 @@ const Home: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <LinkedInIcon fontSize="large" style={{ margin: "0 10px" }} />
+            <LinkedInIcon fontSize="large" style={{ margin: '0 10px' }} />
           </Button>
           <Button
             href="https://github.com/DiogoSis"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <GitHubIcon fontSize="large" style={{ margin: "0 10px" }} />
+            <GitHubIcon fontSize="large" style={{ margin: '0 10px' }} />
           </Button>
           <Button
             href="https://wa.me/21970669909?text=Oi%20estou%20vindo%20do%20site."
             target="_blank"
             rel="noopener noreferrer"
           >
-            <WhatsAppIcon fontSize="large" style={{ margin: "0 10px" }} />
+            <WhatsAppIcon fontSize="large" style={{ margin: '0 10px' }} />
           </Button>
           <Button
             href="https://t.me/21970669909?text=Oi%20estou%20vindo%20do%20site."
             target="_blank"
             rel="noopener noreferrer"
           >
-            <TelegramIcon fontSize="large" style={{ margin: "0 10px" }} />
+            <TelegramIcon fontSize="large" style={{ margin: '0 10px' }} />
           </Button>
           <Button
             href="https://www.reddit.com/user/Diogo-Dev/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <RedditIcon fontSize="large" style={{ margin: "0 10px" }} />
+            <RedditIcon fontSize="large" style={{ margin: '0 10px' }} />
           </Button>
         </Box>
 

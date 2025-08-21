@@ -1,515 +1,515 @@
 [
-    {
-        "id":1,
-        "courseName": "Acessibilidade web parte 1: tornando seu Front-end inclusivo",
-        "startedAt": "12/10/2022",
-        "finishedAt": "12/16/2022",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/acessibilidade-web-front-end.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/acessibilidade-web-front-end/certificate"
-    },
-    {
-        "id":2,
-        "courseName": "Apache Airflow: orquestrando seu primeiro pipeline de dados",
-        "startedAt": "04/22/2023",
-        "finishedAt": "05/01/2023",
-        "categoryCode": "Devops",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/apache-airflow-primeiro-pipeline-dados.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/apache-airflow-primeiro-pipeline-dados/certificate"
-    },
-    {
-        "id":3,
-        "courseName": "Arquitetura CSS: descomplicando os problemas",
-        "startedAt": "12/10/2022",
-        "finishedAt": "12/10/2022",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/arquitetura-css.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/arquitetura-css/certificate"
-    },
-    {
-        "id":4,        
-        "courseName": "Bootstrap 4: criando uma landing page responsiva",
-        "startedAt": "03/08/2023",
-        "finishedAt": "03/09/2023",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/bootstrap-landing-page.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/bootstrap-landing-page/certificate"
-    },
-    {
-        "id":5,
-        "courseName": "CSS Grid: simplificando layouts",
-        "startedAt": "12/21/2022",
-        "finishedAt": "12/22/2022",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/css-grid-layout.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/css-grid-layout/certificate"
-    },
-    {
-        "id":6,
-        "courseName": "Design System: projetando elementos",
-        "startedAt": "06/10/2023",
-        "finishedAt": "07/02/2023",
-        "categoryCode": "UX/UI",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/design-system-primeiros-elementos.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/design-system-primeiros-elementos/certificate"
-    },
-    {
-        "id":7,
-        "courseName": "Expressões regulares: capturando textos de forma mágica",
-        "startedAt": "12/18/2022",
-        "finishedAt": "12/22/2022",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/expressoes-regulares.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/expressoes-regulares/certificate"
-    },
-    {
-        "id":8,
-        "courseName": "Figma: construindo o layout do seu site mobile",
-        "startedAt": "12/24/2022",
-        "finishedAt": "12/24/2022",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/figma-construindo-layout-primeiro-site-mobile.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/figma-construindo-layout-primeiro-site-mobile/certificate"
-    },
-    {
-        "id":9,
-        "courseName": "Flexbox: posicione elementos na tela",
-        "startedAt": "12/11/2022",
-        "finishedAt": "12/12/2022",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/posicione-elementos-com-flexbox.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/posicione-elementos-com-flexbox/certificate"
-    },
-    {
-        "id":10,
-        "courseName": "Git e Github: controle e compartilhe seu código",
-        "startedAt": "12/13/2022",
-        "finishedAt": "12/25/2022",
-        "categoryCode": "Devops",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/git-github-controle-de-versao.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/git-github-controle-de-versao/certificate"
-    },
-    {
-        "id":11,
-        "courseName": "Git e Github: estratégias de ramificação, Conflitos e Pull Requests",
-        "startedAt": "12/25/2022",
-        "finishedAt": "12/26/2022",
-        "categoryCode": "Devops",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/git-github-branching-conflitos-pull-requests.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/git-github-branching-conflitos-pull-requests/certificate"
-    },
-    {
-        "id":12,
-        "courseName": "Growth Hacking: crescimento para negócios digitais",
-        "startedAt": "06/03/2023",
-        "finishedAt": "06/04/2023",
-        "categoryCode": "Inovação e Gestão",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/introducao-growth-hacking.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/introducao-growth-hacking/certificate"
-    },
-    {
-        "id":13,
-        "courseName": "HTML5 e CSS3 parte 1: crie uma página da Web",
-        "startedAt": "11/28/2022",
-        "finishedAt": "11/30/2022",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/html5-css3-primeiros-passos.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/html5-css3-primeiros-passos/certificate"
-    },
-    {
-        "id":14,
-        "courseName": "Acessibilidade web parte 1: tornando seu Front-end inclusivo",
-        "startedAt": "12/10/2022",
-        "finishedAt": "12/16/2022",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/acessibilidade-web-front-end.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/acessibilidade-web-front-end/certificate"
-    },
-    {
-        "id":15,
-        "courseName": "Apache Airflow: orquestrando seu primeiro pipeline de dados",
-        "startedAt": "04/22/2023",
-        "finishedAt": "05/01/2023",
-        "categoryCode": "Devops",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/apache-airflow-primeiro-pipeline-dados.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/apache-airflow-primeiro-pipeline-dados/certificate"
-    },
-    {
-        "id":16,
-        "courseName": "Arquitetura CSS: descomplicando os problemas",
-        "startedAt": "12/10/2022",
-        "finishedAt": "12/10/2022",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/arquitetura-css.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/arquitetura-css/certificate"
-    },
-    {
-        "id":17,
-        "courseName": "Bootstrap 4: criando uma landing page responsiva",
-        "startedAt": "03/08/2023",
-        "finishedAt": "03/09/2023",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/bootstrap-landing-page.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/bootstrap-landing-page/certificate"
-    },
-    {
-        "id":18,
-        "courseName": "CSS Grid: simplificando layouts",
-        "startedAt": "12/21/2022",
-        "finishedAt": "12/22/2022",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/css-grid-layout.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/css-grid-layout/certificate"
-    },
-    {
-        "id":19,
-        "courseName": "Design System: projetando elementos",
-        "startedAt": "06/10/2023",
-        "finishedAt": "07/02/2023",
-        "categoryCode": "UX/UI",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/design-system-primeiros-elementos.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/design-system-primeiros-elementos/certificate"
-    },
-    {
-        "id":20,
-        "courseName": "Expressões regulares: capturando textos de forma mágica",
-        "startedAt": "12/18/2022",
-        "finishedAt": "12/22/2022",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/expressoes-regulares.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/expressoes-regulares/certificate"
-    },
-    {
-        "id":21,
-        "courseName": "Figma: construindo o layout do seu site mobile",
-        "startedAt": "12/24/2022",
-        "finishedAt": "12/24/2022",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/figma-construindo-layout-primeiro-site-mobile.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/figma-construindo-layout-primeiro-site-mobile/certificate"
-    },
-    {
-        "id":22,
-        "courseName": "Flexbox: posicione elementos na tela",
-        "startedAt": "12/11/2022",
-        "finishedAt": "12/12/2022",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/posicione-elementos-com-flexbox.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/posicione-elementos-com-flexbox/certificate"
-    },
-    {
-        "id":23,
-        "courseName": "Git e Github: controle e compartilhe seu código",
-        "startedAt": "12/13/2022",
-        "finishedAt": "12/25/2022",
-        "categoryCode": "Devops",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/git-github-controle-de-versao.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/git-github-controle-de-versao/certificate"
-    },
-    {
-        "id":24,
-        "courseName": "Git e Github: estratégias de ramificação, Conflitos e Pull Requests",
-        "startedAt": "12/25/2022",
-        "finishedAt": "12/26/2022",
-        "categoryCode": "Devops",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/git-github-branching-conflitos-pull-requests.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/git-github-branching-conflitos-pull-requests/certificate"
-    },
-    {
-        "id":25,
-        "courseName": "Growth Hacking: crescimento para negócios digitais",
-        "startedAt": "06/03/2023",
-        "finishedAt": "06/04/2023",
-        "categoryCode": "Inovação e Gestão",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/introducao-growth-hacking.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/introducao-growth-hacking/certificate"
-    },
-    {
-        "id":26,
-        "courseName": "HTML5 e CSS3 parte 1: crie uma página da Web",
-        "startedAt": "11/28/2022",
-        "finishedAt": "11/30/2022",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/html5-css3-primeiros-passos.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/html5-css3-primeiros-passos/certificate"
-    },
-    {
-        "id":30,
-        "courseName": "HTML5 e CSS3 parte 2: posicionamento, listas e navegação",
-        "startedAt": "11/29/2022",
-        "finishedAt": "12/02/2022",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/html5-css3-posicionamento-listas-navegacao.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/html5-css3-posicionamento-listas-navegacao/certificate"
-    },
-    {
-        "id":31,
-        "courseName": "HTML5 e CSS3 parte 3: trabalhando com formulários e tabelas",
-        "startedAt": "12/05/2022",
-        "finishedAt": "12/06/2022",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/html5-css3-formularios-tabelas.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/html5-css3-formularios-tabelas/certificate"
-    },
-    {
-        "id":32,
-        "courseName": "HTML5 e CSS3 parte 4: avançando no CSS",
-        "startedAt": "12/08/2022",
-        "finishedAt": "12/10/2022",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/html5-css3-avancando-css.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/html5-css3-avancando-css/certificate"
-    },
-    {
-        "id":33,
-        "courseName": "Inteligência Artificial e UX: otimize a construção de um produto digital",
-        "startedAt": "07/02/2023",
-        "finishedAt": "07/02/2023",
-        "categoryCode": "IA",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/Inteligencia-artificial-ux-construcao-produto-digital.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/Inteligencia-artificial-ux-construcao-produto-digital/certificate"
-    },
-    {
-        "id":34,
-        "courseName": "JavaScript na Web: armazenando dados no navegador",
-        "startedAt": "12/08/2022",
-        "finishedAt": "12/13/2022",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/javascript-web-armazenando-dados-navegador.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/javascript-web-armazenando-dados-navegador/certificate"
-    },
-    {
-        "id":35,
-        "courseName": "JavaScript na Web: validação de Formulários e HTML5",
-        "startedAt": "12/22/2022",
-        "finishedAt": "12/24/2022",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/javascript-web-validacao-formularios-html5.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/javascript-web-validacao-formularios-html5/certificate"
-    },
-    {
-        "id":36,
-        "courseName": "JavaScript para Web: Crie páginas dinâmicas",
-        "startedAt": "11/23/2022",
-        "finishedAt": "11/28/2022",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/javascript-web-paginas-dinamicas.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/javascript-web-paginas-dinamicas/certificate"
-    },
-    {
-        "id":37,
-        "courseName": "JavaScript: consumindo e tratando dados de uma API",
-        "startedAt": "12/27/2022",
-        "finishedAt": "12/28/2022",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/javascript-consumindo-tratando-dados-api.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/javascript-consumindo-tratando-dados-api/certificate"
-    },
-    {
-        "id":38,
-        "courseName": "JavaScript: criando requisições",
-        "startedAt": "01/06/2023",
-        "finishedAt": "01/08/2023",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/javascript-criando-requisicoes.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/javascript-criando-requisicoes/certificate"
-    },
-    {
-        "id":39,
-        "courseName": "JavaScript: manipulando o DOM",
-        "startedAt": "11/28/2022",
-        "finishedAt": "11/29/2022",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/javascript-manipulando-dom.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/javascript-manipulando-dom/certificate"
-    },
-    {
-        "id":40,
-        "courseName": "JavaScript: métodos de array",
-        "startedAt": "01/02/2023",
-        "finishedAt": "01/04/2023",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/javascript-metodos-array.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/javascript-metodos-array/certificate"
-    },
-    {
-        "id":41,
-        "courseName": "JavaScript: programando na linguagem da web",
-        "startedAt": "11/29/2022",
-        "finishedAt": "12/07/2022",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/javascript-programando-na-linguagem-web.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/javascript-programando-na-linguagem-web/certificate"
-    },
-    {
-        "id":42,
-        "courseName": "JavaScript: validações e reconhecimento de voz",
-        "startedAt": "12/26/2022",
-        "finishedAt": "12/26/2022",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/javascript-validacoes-reconhecimento-voz.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/javascript-validacoes-reconhecimento-voz/certificate"
-    },
-    {
-        "id":43,
-        "courseName": "JavaScript: validando formulários",
-        "startedAt": "01/08/2023",
-        "finishedAt": "01/08/2023",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/javascript-validando-formularios.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/javascript-validando-formularios/certificate"
-    },
-    {
-        "id":44,
-        "courseName": "Layouts Responsivos: trabalhando com layouts mobile",
-        "startedAt": "12/16/2022",
-        "finishedAt": "12/17/2022",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/mobile-first-layouts-responsivos.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/mobile-first-layouts-responsivos/certificate"
-    },
-    {
-        "id":45,
-        "courseName": "Linux I: conhecendo e utilizando o terminal",
-        "startedAt": "12/07/2022",
-        "finishedAt": "12/07/2022",
-        "categoryCode": "Devops",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/linux-ubuntu.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/linux-ubuntu/certificate"
-    },
-    {
-        "id":46,
-        "courseName": "Linux Onboarding: usando a CLI de uma forma rápida e prática",
-        "startedAt": "01/04/2023",
-        "finishedAt": "04/22/2023",
-        "categoryCode": "Devops",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/linux-onboarding-utilizar-cli-forma-rapida-pratica.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/linux-onboarding-utilizar-cli-forma-rapida-pratica/certificate"
-    },
-    {
-        "id":47,
-        "courseName": "Lógica de programação: comece em lógica com o jogo Pong e JavaScript",
-        "startedAt": "02/27/2023",
-        "finishedAt": "03/04/2023",
-        "categoryCode": "Programação",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/pong-javascript.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/pong-javascript/certificate"
-    },
-    {
-        "id":48,
-        "courseName": "Node.js: criando sua primeira biblioteca",
-        "startedAt": "02/25/2023",
-        "finishedAt": "03/06/2023",
-        "categoryCode": "Programação",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/nodejs-criando-primeira-biblioteca.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/nodejs-criando-primeira-biblioteca/certificate"
-    },
-    {
-        "id":49,
-        "courseName": "Organização de Equipes Ágeis: os papéis existentes em uma equipe",
-        "startedAt": "03/26/2023",
-        "finishedAt": "04/02/2023",
-        "categoryCode": "Inovação e Gestão",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/organizando-equipes-ageis.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/organizando-equipes-ageis/certificate"
-    },
-    {
-        "id":50,
-        "courseName": "Python: começando com a linguagem",
-        "startedAt": "04/14/2023",
-        "finishedAt": "04/16/2023",
-        "categoryCode": "Programação",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/python-introducao-a-linguagem.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/python-introducao-a-linguagem/certificate"
-    },
-    {
-        "id":51,
-        "courseName": "React com TailwindCSS: estilizando componentes",
-        "startedAt": "03/14/2023",
-        "finishedAt": "04/01/2023",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/react-tailwindcss-estilizando-componentes.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/react-tailwindcss-estilizando-componentes/certificate"
-    },
-    {
-        "id":52,
-        "courseName": "React: comece seu projeto full stack",
-        "startedAt": "02/22/2023",
-        "finishedAt": "02/28/2023",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/react-crie-primeira-pagina-web.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/react-crie-primeira-pagina-web/certificate"
-    },
-    {
-        "id":53,
-        "courseName": "React: como os componentes funcionam",
-        "startedAt": "05/01/2023",
-        "finishedAt": "06/10/2023",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/react-componentes-funcionam.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/react-componentes-funcionam/certificate"
-    },
-    {
-        "id":54,
-        "courseName": "React: desenvolvendo com JavaScript",
-        "startedAt": "01/10/2023",
-        "finishedAt": "03/25/2023",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/react-desenvolvendo-javascript.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/react-desenvolvendo-javascript/certificate"
-    },
-    {
-        "id":55,
-        "courseName": "React: desenvolvendo em React Router com JavaScript",
-        "startedAt": "06/10/2023",
-        "finishedAt": "07/02/2023",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/React-desenvolvendo-react-router-javaScript.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/React-desenvolvendo-react-router-javaScript/certificate"
-    },
-    {
-        "id":56,
-        "courseName": "SEO: otimização de sites",
-        "startedAt": "12/11/2022",
-        "finishedAt": "12/21/2022",
-        "categoryCode": "Inovação e Gestão",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/seo-otimizacao-sites.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/seo-otimizacao-sites/certificate"
-    },
-    {
-        "id":57,
-        "courseName": "Tailwind CSS: estilizando a sua página com classes utilitárias",
-        "startedAt": "03/07/2023",
-        "finishedAt": "03/07/2023",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/tailwind-css-estilizando-pagina-classes-utilitarias.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/tailwind-css-estilizando-pagina-classes-utilitarias/certificate"
-    },
-    {
-        "id":58,
-        "courseName": "TypeScript parte 1: evoluindo seu JavaScript",
-        "startedAt": "03/30/2023",
-        "finishedAt": "04/07/2023",
-        "categoryCode": "Front-end",
-        "imageUrl": "https://www.alura.com.br/assets/api/cursos/typescript-evoluindo-javascript.svg",
-        "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/typescript-evoluindo-javascript/certificate"
-    },
-    {
-        "id":59,
-        "courseName": "Fundamentos Básicos do SAP S/4HANA",
-        "startedAt": "",
-        "finishedAt": "08/10/2024",
-        "categoryCode": "SAP",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/SAP_2011_logo.svg/200px-SAP_2011_logo.svg.png",
-        "certificateUrl": "https://upload-diplomas.s3.amazonaws.com/Fundamentos+Basicos+do+SAP.pdf"
-    },
-    {
-        "id":60,
-        "courseName": "Intro - AWS Cloud Practitioner Essentials",
-        "startedAt": "",
-        "finishedAt": "06/09/2024",
-        "categoryCode": "AWS",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/512px-Amazon_Web_Services_Logo.svg.png",
-        "certificateUrl": "https://upload-diplomas.s3.amazonaws.com/AWS+Cloud+Practitioner+Essentials.pdf"
-    }
+  {
+    "id": 1,
+    "courseName": "Acessibilidade web parte 1: tornando seu Front-end inclusivo",
+    "startedAt": "12/10/2022",
+    "finishedAt": "12/16/2022",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/acessibilidade-web-front-end.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/acessibilidade-web-front-end/certificate"
+  },
+  {
+    "id": 2,
+    "courseName": "Apache Airflow: orquestrando seu primeiro pipeline de dados",
+    "startedAt": "04/22/2023",
+    "finishedAt": "05/01/2023",
+    "categoryCode": "Devops",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/apache-airflow-primeiro-pipeline-dados.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/apache-airflow-primeiro-pipeline-dados/certificate"
+  },
+  {
+    "id": 3,
+    "courseName": "Arquitetura CSS: descomplicando os problemas",
+    "startedAt": "12/10/2022",
+    "finishedAt": "12/10/2022",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/arquitetura-css.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/arquitetura-css/certificate"
+  },
+  {
+    "id": 4,
+    "courseName": "Bootstrap 4: criando uma landing page responsiva",
+    "startedAt": "03/08/2023",
+    "finishedAt": "03/09/2023",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/bootstrap-landing-page.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/bootstrap-landing-page/certificate"
+  },
+  {
+    "id": 5,
+    "courseName": "CSS Grid: simplificando layouts",
+    "startedAt": "12/21/2022",
+    "finishedAt": "12/22/2022",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/css-grid-layout.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/css-grid-layout/certificate"
+  },
+  {
+    "id": 6,
+    "courseName": "Design System: projetando elementos",
+    "startedAt": "06/10/2023",
+    "finishedAt": "07/02/2023",
+    "categoryCode": "UX/UI",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/design-system-primeiros-elementos.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/design-system-primeiros-elementos/certificate"
+  },
+  {
+    "id": 7,
+    "courseName": "Expressões regulares: capturando textos de forma mágica",
+    "startedAt": "12/18/2022",
+    "finishedAt": "12/22/2022",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/expressoes-regulares.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/expressoes-regulares/certificate"
+  },
+  {
+    "id": 8,
+    "courseName": "Figma: construindo o layout do seu site mobile",
+    "startedAt": "12/24/2022",
+    "finishedAt": "12/24/2022",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/figma-construindo-layout-primeiro-site-mobile.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/figma-construindo-layout-primeiro-site-mobile/certificate"
+  },
+  {
+    "id": 9,
+    "courseName": "Flexbox: posicione elementos na tela",
+    "startedAt": "12/11/2022",
+    "finishedAt": "12/12/2022",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/posicione-elementos-com-flexbox.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/posicione-elementos-com-flexbox/certificate"
+  },
+  {
+    "id": 10,
+    "courseName": "Git e Github: controle e compartilhe seu código",
+    "startedAt": "12/13/2022",
+    "finishedAt": "12/25/2022",
+    "categoryCode": "Devops",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/git-github-controle-de-versao.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/git-github-controle-de-versao/certificate"
+  },
+  {
+    "id": 11,
+    "courseName": "Git e Github: estratégias de ramificação, Conflitos e Pull Requests",
+    "startedAt": "12/25/2022",
+    "finishedAt": "12/26/2022",
+    "categoryCode": "Devops",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/git-github-branching-conflitos-pull-requests.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/git-github-branching-conflitos-pull-requests/certificate"
+  },
+  {
+    "id": 12,
+    "courseName": "Growth Hacking: crescimento para negócios digitais",
+    "startedAt": "06/03/2023",
+    "finishedAt": "06/04/2023",
+    "categoryCode": "Inovação e Gestão",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/introducao-growth-hacking.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/introducao-growth-hacking/certificate"
+  },
+  {
+    "id": 13,
+    "courseName": "HTML5 e CSS3 parte 1: crie uma página da Web",
+    "startedAt": "11/28/2022",
+    "finishedAt": "11/30/2022",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/html5-css3-primeiros-passos.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/html5-css3-primeiros-passos/certificate"
+  },
+  {
+    "id": 14,
+    "courseName": "Acessibilidade web parte 1: tornando seu Front-end inclusivo",
+    "startedAt": "12/10/2022",
+    "finishedAt": "12/16/2022",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/acessibilidade-web-front-end.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/acessibilidade-web-front-end/certificate"
+  },
+  {
+    "id": 15,
+    "courseName": "Apache Airflow: orquestrando seu primeiro pipeline de dados",
+    "startedAt": "04/22/2023",
+    "finishedAt": "05/01/2023",
+    "categoryCode": "Devops",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/apache-airflow-primeiro-pipeline-dados.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/apache-airflow-primeiro-pipeline-dados/certificate"
+  },
+  {
+    "id": 16,
+    "courseName": "Arquitetura CSS: descomplicando os problemas",
+    "startedAt": "12/10/2022",
+    "finishedAt": "12/10/2022",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/arquitetura-css.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/arquitetura-css/certificate"
+  },
+  {
+    "id": 17,
+    "courseName": "Bootstrap 4: criando uma landing page responsiva",
+    "startedAt": "03/08/2023",
+    "finishedAt": "03/09/2023",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/bootstrap-landing-page.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/bootstrap-landing-page/certificate"
+  },
+  {
+    "id": 18,
+    "courseName": "CSS Grid: simplificando layouts",
+    "startedAt": "12/21/2022",
+    "finishedAt": "12/22/2022",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/css-grid-layout.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/css-grid-layout/certificate"
+  },
+  {
+    "id": 19,
+    "courseName": "Design System: projetando elementos",
+    "startedAt": "06/10/2023",
+    "finishedAt": "07/02/2023",
+    "categoryCode": "UX/UI",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/design-system-primeiros-elementos.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/design-system-primeiros-elementos/certificate"
+  },
+  {
+    "id": 20,
+    "courseName": "Expressões regulares: capturando textos de forma mágica",
+    "startedAt": "12/18/2022",
+    "finishedAt": "12/22/2022",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/expressoes-regulares.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/expressoes-regulares/certificate"
+  },
+  {
+    "id": 21,
+    "courseName": "Figma: construindo o layout do seu site mobile",
+    "startedAt": "12/24/2022",
+    "finishedAt": "12/24/2022",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/figma-construindo-layout-primeiro-site-mobile.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/figma-construindo-layout-primeiro-site-mobile/certificate"
+  },
+  {
+    "id": 22,
+    "courseName": "Flexbox: posicione elementos na tela",
+    "startedAt": "12/11/2022",
+    "finishedAt": "12/12/2022",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/posicione-elementos-com-flexbox.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/posicione-elementos-com-flexbox/certificate"
+  },
+  {
+    "id": 23,
+    "courseName": "Git e Github: controle e compartilhe seu código",
+    "startedAt": "12/13/2022",
+    "finishedAt": "12/25/2022",
+    "categoryCode": "Devops",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/git-github-controle-de-versao.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/git-github-controle-de-versao/certificate"
+  },
+  {
+    "id": 24,
+    "courseName": "Git e Github: estratégias de ramificação, Conflitos e Pull Requests",
+    "startedAt": "12/25/2022",
+    "finishedAt": "12/26/2022",
+    "categoryCode": "Devops",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/git-github-branching-conflitos-pull-requests.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/git-github-branching-conflitos-pull-requests/certificate"
+  },
+  {
+    "id": 25,
+    "courseName": "Growth Hacking: crescimento para negócios digitais",
+    "startedAt": "06/03/2023",
+    "finishedAt": "06/04/2023",
+    "categoryCode": "Inovação e Gestão",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/introducao-growth-hacking.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/introducao-growth-hacking/certificate"
+  },
+  {
+    "id": 26,
+    "courseName": "HTML5 e CSS3 parte 1: crie uma página da Web",
+    "startedAt": "11/28/2022",
+    "finishedAt": "11/30/2022",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/html5-css3-primeiros-passos.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/html5-css3-primeiros-passos/certificate"
+  },
+  {
+    "id": 30,
+    "courseName": "HTML5 e CSS3 parte 2: posicionamento, listas e navegação",
+    "startedAt": "11/29/2022",
+    "finishedAt": "12/02/2022",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/html5-css3-posicionamento-listas-navegacao.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/html5-css3-posicionamento-listas-navegacao/certificate"
+  },
+  {
+    "id": 31,
+    "courseName": "HTML5 e CSS3 parte 3: trabalhando com formulários e tabelas",
+    "startedAt": "12/05/2022",
+    "finishedAt": "12/06/2022",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/html5-css3-formularios-tabelas.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/html5-css3-formularios-tabelas/certificate"
+  },
+  {
+    "id": 32,
+    "courseName": "HTML5 e CSS3 parte 4: avançando no CSS",
+    "startedAt": "12/08/2022",
+    "finishedAt": "12/10/2022",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/html5-css3-avancando-css.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/html5-css3-avancando-css/certificate"
+  },
+  {
+    "id": 33,
+    "courseName": "Inteligência Artificial e UX: otimize a construção de um produto digital",
+    "startedAt": "07/02/2023",
+    "finishedAt": "07/02/2023",
+    "categoryCode": "IA",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/Inteligencia-artificial-ux-construcao-produto-digital.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/Inteligencia-artificial-ux-construcao-produto-digital/certificate"
+  },
+  {
+    "id": 34,
+    "courseName": "JavaScript na Web: armazenando dados no navegador",
+    "startedAt": "12/08/2022",
+    "finishedAt": "12/13/2022",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/javascript-web-armazenando-dados-navegador.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/javascript-web-armazenando-dados-navegador/certificate"
+  },
+  {
+    "id": 35,
+    "courseName": "JavaScript na Web: validação de Formulários e HTML5",
+    "startedAt": "12/22/2022",
+    "finishedAt": "12/24/2022",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/javascript-web-validacao-formularios-html5.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/javascript-web-validacao-formularios-html5/certificate"
+  },
+  {
+    "id": 36,
+    "courseName": "JavaScript para Web: Crie páginas dinâmicas",
+    "startedAt": "11/23/2022",
+    "finishedAt": "11/28/2022",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/javascript-web-paginas-dinamicas.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/javascript-web-paginas-dinamicas/certificate"
+  },
+  {
+    "id": 37,
+    "courseName": "JavaScript: consumindo e tratando dados de uma API",
+    "startedAt": "12/27/2022",
+    "finishedAt": "12/28/2022",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/javascript-consumindo-tratando-dados-api.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/javascript-consumindo-tratando-dados-api/certificate"
+  },
+  {
+    "id": 38,
+    "courseName": "JavaScript: criando requisições",
+    "startedAt": "01/06/2023",
+    "finishedAt": "01/08/2023",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/javascript-criando-requisicoes.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/javascript-criando-requisicoes/certificate"
+  },
+  {
+    "id": 39,
+    "courseName": "JavaScript: manipulando o DOM",
+    "startedAt": "11/28/2022",
+    "finishedAt": "11/29/2022",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/javascript-manipulando-dom.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/javascript-manipulando-dom/certificate"
+  },
+  {
+    "id": 40,
+    "courseName": "JavaScript: métodos de array",
+    "startedAt": "01/02/2023",
+    "finishedAt": "01/04/2023",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/javascript-metodos-array.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/javascript-metodos-array/certificate"
+  },
+  {
+    "id": 41,
+    "courseName": "JavaScript: programando na linguagem da web",
+    "startedAt": "11/29/2022",
+    "finishedAt": "12/07/2022",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/javascript-programando-na-linguagem-web.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/javascript-programando-na-linguagem-web/certificate"
+  },
+  {
+    "id": 42,
+    "courseName": "JavaScript: validações e reconhecimento de voz",
+    "startedAt": "12/26/2022",
+    "finishedAt": "12/26/2022",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/javascript-validacoes-reconhecimento-voz.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/javascript-validacoes-reconhecimento-voz/certificate"
+  },
+  {
+    "id": 43,
+    "courseName": "JavaScript: validando formulários",
+    "startedAt": "01/08/2023",
+    "finishedAt": "01/08/2023",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/javascript-validando-formularios.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/javascript-validando-formularios/certificate"
+  },
+  {
+    "id": 44,
+    "courseName": "Layouts Responsivos: trabalhando com layouts mobile",
+    "startedAt": "12/16/2022",
+    "finishedAt": "12/17/2022",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/mobile-first-layouts-responsivos.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/mobile-first-layouts-responsivos/certificate"
+  },
+  {
+    "id": 45,
+    "courseName": "Linux I: conhecendo e utilizando o terminal",
+    "startedAt": "12/07/2022",
+    "finishedAt": "12/07/2022",
+    "categoryCode": "Devops",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/linux-ubuntu.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/linux-ubuntu/certificate"
+  },
+  {
+    "id": 46,
+    "courseName": "Linux Onboarding: usando a CLI de uma forma rápida e prática",
+    "startedAt": "01/04/2023",
+    "finishedAt": "04/22/2023",
+    "categoryCode": "Devops",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/linux-onboarding-utilizar-cli-forma-rapida-pratica.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/linux-onboarding-utilizar-cli-forma-rapida-pratica/certificate"
+  },
+  {
+    "id": 47,
+    "courseName": "Lógica de programação: comece em lógica com o jogo Pong e JavaScript",
+    "startedAt": "02/27/2023",
+    "finishedAt": "03/04/2023",
+    "categoryCode": "Programação",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/pong-javascript.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/pong-javascript/certificate"
+  },
+  {
+    "id": 48,
+    "courseName": "Node.js: criando sua primeira biblioteca",
+    "startedAt": "02/25/2023",
+    "finishedAt": "03/06/2023",
+    "categoryCode": "Programação",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/nodejs-criando-primeira-biblioteca.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/nodejs-criando-primeira-biblioteca/certificate"
+  },
+  {
+    "id": 49,
+    "courseName": "Organização de Equipes Ágeis: os papéis existentes em uma equipe",
+    "startedAt": "03/26/2023",
+    "finishedAt": "04/02/2023",
+    "categoryCode": "Inovação e Gestão",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/organizando-equipes-ageis.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/organizando-equipes-ageis/certificate"
+  },
+  {
+    "id": 50,
+    "courseName": "Python: começando com a linguagem",
+    "startedAt": "04/14/2023",
+    "finishedAt": "04/16/2023",
+    "categoryCode": "Programação",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/python-introducao-a-linguagem.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/python-introducao-a-linguagem/certificate"
+  },
+  {
+    "id": 51,
+    "courseName": "React com TailwindCSS: estilizando componentes",
+    "startedAt": "03/14/2023",
+    "finishedAt": "04/01/2023",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/react-tailwindcss-estilizando-componentes.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/react-tailwindcss-estilizando-componentes/certificate"
+  },
+  {
+    "id": 52,
+    "courseName": "React: comece seu projeto full stack",
+    "startedAt": "02/22/2023",
+    "finishedAt": "02/28/2023",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/react-crie-primeira-pagina-web.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/react-crie-primeira-pagina-web/certificate"
+  },
+  {
+    "id": 53,
+    "courseName": "React: como os componentes funcionam",
+    "startedAt": "05/01/2023",
+    "finishedAt": "06/10/2023",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/react-componentes-funcionam.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/react-componentes-funcionam/certificate"
+  },
+  {
+    "id": 54,
+    "courseName": "React: desenvolvendo com JavaScript",
+    "startedAt": "01/10/2023",
+    "finishedAt": "03/25/2023",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/react-desenvolvendo-javascript.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/react-desenvolvendo-javascript/certificate"
+  },
+  {
+    "id": 55,
+    "courseName": "React: desenvolvendo em React Router com JavaScript",
+    "startedAt": "06/10/2023",
+    "finishedAt": "07/02/2023",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/React-desenvolvendo-react-router-javaScript.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/React-desenvolvendo-react-router-javaScript/certificate"
+  },
+  {
+    "id": 56,
+    "courseName": "SEO: otimização de sites",
+    "startedAt": "12/11/2022",
+    "finishedAt": "12/21/2022",
+    "categoryCode": "Inovação e Gestão",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/seo-otimizacao-sites.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/seo-otimizacao-sites/certificate"
+  },
+  {
+    "id": 57,
+    "courseName": "Tailwind CSS: estilizando a sua página com classes utilitárias",
+    "startedAt": "03/07/2023",
+    "finishedAt": "03/07/2023",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/tailwind-css-estilizando-pagina-classes-utilitarias.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/tailwind-css-estilizando-pagina-classes-utilitarias/certificate"
+  },
+  {
+    "id": 58,
+    "courseName": "TypeScript parte 1: evoluindo seu JavaScript",
+    "startedAt": "03/30/2023",
+    "finishedAt": "04/07/2023",
+    "categoryCode": "Front-end",
+    "imageUrl": "https://www.alura.com.br/assets/api/cursos/typescript-evoluindo-javascript.svg",
+    "certificateUrl": "https://cursos.alura.com.br/user/diogodeassis777/course/typescript-evoluindo-javascript/certificate"
+  },
+  {
+    "id": 59,
+    "courseName": "Fundamentos Básicos do SAP S/4HANA",
+    "startedAt": "",
+    "finishedAt": "08/10/2024",
+    "categoryCode": "SAP",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/SAP_2011_logo.svg/200px-SAP_2011_logo.svg.png",
+    "certificateUrl": "https://upload-diplomas.s3.amazonaws.com/Fundamentos+Basicos+do+SAP.pdf"
+  },
+  {
+    "id": 60,
+    "courseName": "Intro - AWS Cloud Practitioner Essentials",
+    "startedAt": "",
+    "finishedAt": "06/09/2024",
+    "categoryCode": "AWS",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/512px-Amazon_Web_Services_Logo.svg.png",
+    "certificateUrl": "https://upload-diplomas.s3.amazonaws.com/AWS+Cloud+Practitioner+Essentials.pdf"
+  }
 ]

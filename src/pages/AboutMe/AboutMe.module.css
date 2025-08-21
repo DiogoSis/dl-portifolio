@@ -1,35 +1,108 @@
 .content {
-    margin: 4rem;
-    min-width: 40px;
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 0 2rem;
 }
 
 .contentBox {
-    margin: 2rem 0;
-}
-
-.timelineContainer {
-    display: flex;
-    justify-content: flex-start; /* Alinha à esquerda */
-    height: 100%;
+  margin: 3rem 0;
+  text-align: center;
 }
 
 .title {
-    font-family: 'sf pixelate' !important;
+  font-family: 'SF Pixelate', monospace !important;
+  color: #00ff00 !important;
+  text-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+  margin-bottom: 1rem !important;
 }
 
-.subTitle {
-    font-family: 'sf pixelate' !important;
+.contentBoxTimeLine {
+  margin: 4rem 0 !important;
+}
+
+.timelineSection, .gallerySection {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionTitle {
+  font-family: 'SF Pixelate', monospace !important;
+  color: #00ff00 !important;
+  text-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+  margin-bottom: 2rem !important;
+  text-align: center;
+}
+
+.descriptionSection {
+  margin: 4rem 0;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 255, 0, 0.2);
+}
+
+.description {
+  color: #b0b0b0 !important;
+  font-size: 1.1rem !important;
+  line-height: 1.8 !important;
+  text-align: justify;
+}
+
+/* Responsividade */
+@media (max-width: 968px) {
+  .content {
+    margin: 1rem auto;
+    padding: 0 1rem;
+  }
+
+  .contentBoxTimeLine {
+    margin: 2rem 0 !important;
+  }
+
+  .timelineSection, .gallerySection {
+    margin-bottom: 2rem;
+  }
+
+  .title {
+    font-size: 2rem !important;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem !important;
+  }
+
+  .descriptionSection {
     margin: 2rem 0;
+    padding: 1.5rem;
+  }
+
+  .description {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+  }
 }
 
+@media (max-width: 480px) {
+  .content {
+    padding: 0 0.5rem;
+  }
+
+  .title {
+    font-size: 1.5rem !important;
+  }
+
+  .sectionTitle {
+    font-size: 1.2rem !important;
+  }
+
+  .descriptionSection {
+    padding: 1rem;
+  }
+}
+
+/* Estilos removidos - não utilizados mais */
+.subTitle,
 .contentImag {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    gap: 5rem; 
-}
-
-.contentImag img {
-    width: 100%; /* ajusta a largura da imagem */
-    height: auto; /* mantém a proporção */
+  display: none;
 }

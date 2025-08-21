@@ -1,83 +1,83 @@
 [
-    {
-        "id": 1,
-        "name": "Formação Front-end",
-        "conclusion": "24/12/2022",
-        "certificate": "https://cursos.alura.com.br/user/diogodeassis777/degree-front-end-113709/certificate",
-        "area": "Desenvolvimento Web",
-        "materias": [
-            "HTML5 e CSS3 parte 1: crie uma página da Web",
-            "HTML5 e CSS3 parte 2: posicionamento, listas e navegação",
-            "HTML5 e CSS3 parte 3: trabalhando com formulários e tabelas",
-            "HTML5 e CSS3 parte 4: avançando no CSS",
-            "Acessibilidade web parte 1: tornando seu front-end inclusivo",
-            "Arquitetura CSS: descomplicando os problemas",
-            "SEO: otimização de sites",
-            "Flexbox: posicione elementos na tela",
-            "Layouts Responsivos: trabalhando com layouts mobile",
-            "CSS Grid: simplificando layouts",
-            "JavaScript para Web: Crie páginas dinâmicas",
-            "Expressões regulares: capturando textos de forma mágica",
-            "JavaScript na Web: validação de Formulários e HTML5"
-        ]
-    },
-    {
-        "id": 2,
-        "name": "Formação Desenvolva aplicações Web com JavaScript",
-        "conclusion": "08/01/2023",
-        "certificate": "https://cursos.alura.com.br/user/diogodeassis777/degree-javascript-front-end-v374365-374365/certificate",
-        "area": "Desenvolvimento Web",
-        "materias": [
-            "JavaScript para Web: Crie páginas dinâmicas",
-            "JavaScript: manipulando o DOM",
-            "JavaScript na Web: armazenando dados no navegador",
-            "JavaScript: validações e reconhecimento de voz",
-            "JavaScript: consumindo e tratando dados de uma API",
-            "JavaScript: métodos de array",
-            "JavaScript: criando requisições",
-            "JavaScript: validando formulários"
-        ]
-    },
-    {
-        "id": 3,
-        "name": "Formação Pratique HTML e CSS em projetos Web",
-        "conclusion": "10/12/2022",
-        "certificate": "https://cursos.alura.com.br/user/diogodeassis777/degree-html-css-v534235-534235/certificate",
-        "area": "Desenvolvimento Web",
-        "materias": [
-            "HTML5 e CSS3 parte 1: crie uma página da Web",
-            "HTML5 e CSS3 parte 2: posicionamento, listas e navegação",
-            "HTML5 e CSS3 parte 3: trabalhando com formulários e tabelas",
-            "HTML5 e CSS3 parte 4: avançando no CSS"
-        ]
-    },
-    {
-        "id": 4,
-        "name": "Programação de Algoritimos Escaláveis",
-        "conclusion": "04/10/2024",
-        "certificate": "https://upload-diplomas.s3.us-east-1.amazonaws.com/Programa%C3%A7%C3%A3o+de+Algoritimos+Escal%C3%A1veis.pdf",
-        "area": "Lógica e Análise",
-        "materias": [
-            "Matemática e Lógica",
-            "Paradigmas de Linguagens de Programação em Python",
-            "Estruturas de Dados"
-        ]
-    },
-    {
-        "id": 5,
-        "name": "Terraform - Do Básico ao Avançado",
-        "conclusion": "20/11/2024",
-        "certificate": "https://udemy-certificate.s3.amazonaws.com/pdf/UC-dda8d162-4229-4ec3-873f-f9b774766f4f.pdf",
-        "area": "Devops",
-        "materias": [
-            "Funções Basicas",
-            "Variáveis e Outputs",
-            "Terraform State",
-            "Provisioners",
-            "Modulos",
-            "Meta Arguments",
-            "Expressões",
-            "Terraform em Pipelines"
-        ]
-    }
+  {
+    "id": 1,
+    "name": "Formação Front-end",
+    "conclusion": "24/12/2022",
+    "certificate": "https://cursos.alura.com.br/user/diogodeassis777/degree-front-end-113709/certificate",
+    "area": "Desenvolvimento Web",
+    "materias": [
+      "HTML5 e CSS3 parte 1: crie uma página da Web",
+      "HTML5 e CSS3 parte 2: posicionamento, listas e navegação",
+      "HTML5 e CSS3 parte 3: trabalhando com formulários e tabelas",
+      "HTML5 e CSS3 parte 4: avançando no CSS",
+      "Acessibilidade web parte 1: tornando seu front-end inclusivo",
+      "Arquitetura CSS: descomplicando os problemas",
+      "SEO: otimização de sites",
+      "Flexbox: posicione elementos na tela",
+      "Layouts Responsivos: trabalhando com layouts mobile",
+      "CSS Grid: simplificando layouts",
+      "JavaScript para Web: Crie páginas dinâmicas",
+      "Expressões regulares: capturando textos de forma mágica",
+      "JavaScript na Web: validação de Formulários e HTML5"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Formação Desenvolva aplicações Web com JavaScript",
+    "conclusion": "08/01/2023",
+    "certificate": "https://cursos.alura.com.br/user/diogodeassis777/degree-javascript-front-end-v374365-374365/certificate",
+    "area": "Desenvolvimento Web",
+    "materias": [
+      "JavaScript para Web: Crie páginas dinâmicas",
+      "JavaScript: manipulando o DOM",
+      "JavaScript na Web: armazenando dados no navegador",
+      "JavaScript: validações e reconhecimento de voz",
+      "JavaScript: consumindo e tratando dados de uma API",
+      "JavaScript: métodos de array",
+      "JavaScript: criando requisições",
+      "JavaScript: validando formulários"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Formação Pratique HTML e CSS em projetos Web",
+    "conclusion": "10/12/2022",
+    "certificate": "https://cursos.alura.com.br/user/diogodeassis777/degree-html-css-v534235-534235/certificate",
+    "area": "Desenvolvimento Web",
+    "materias": [
+      "HTML5 e CSS3 parte 1: crie uma página da Web",
+      "HTML5 e CSS3 parte 2: posicionamento, listas e navegação",
+      "HTML5 e CSS3 parte 3: trabalhando com formulários e tabelas",
+      "HTML5 e CSS3 parte 4: avançando no CSS"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Programação de Algoritimos Escaláveis",
+    "conclusion": "04/10/2024",
+    "certificate": "https://upload-diplomas.s3.us-east-1.amazonaws.com/Programa%C3%A7%C3%A3o+de+Algoritimos+Escal%C3%A1veis.pdf",
+    "area": "Lógica e Análise",
+    "materias": [
+      "Matemática e Lógica",
+      "Paradigmas de Linguagens de Programação em Python",
+      "Estruturas de Dados"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Terraform - Do Básico ao Avançado",
+    "conclusion": "20/11/2024",
+    "certificate": "https://udemy-certificate.s3.amazonaws.com/pdf/UC-dda8d162-4229-4ec3-873f-f9b774766f4f.pdf",
+    "area": "Devops",
+    "materias": [
+      "Funções Basicas",
+      "Variáveis e Outputs",
+      "Terraform State",
+      "Provisioners",
+      "Modulos",
+      "Meta Arguments",
+      "Expressões",
+      "Terraform em Pipelines"
+    ]
+  }
 ]

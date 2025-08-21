@@ -1,8 +1,8 @@
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import './styles/index.css'
-import { ThemeProvider } from '@emotion/react'
-import { createTheme } from '@mui/material'
+import ReactDOM from 'react-dom/client';
+import App from './App.tsx';
+import './styles/index.css';
+import { ThemeProvider } from '@emotion/react';
+import { createTheme } from '@mui/material';
 
 const theme = createTheme({
   typography: {
@@ -19,10 +19,10 @@ const theme = createTheme({
       primary: '#00ff00',
     },
   },
-})
+});
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <ThemeProvider theme={theme}>
     <App />
   </ThemeProvider>
-)
+);
