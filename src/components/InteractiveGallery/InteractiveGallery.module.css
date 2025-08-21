@@ -274,11 +274,75 @@
 
   .imageCard {
     border-radius: 8px !important;
+    border-width: 1px;
   }
 
   .galleryTitle {
     font-size: 1.5rem !important;
     margin-bottom: 1.5rem !important;
+  }
+  
+  .imageContainer {
+    padding: 100px 15px 60px;
+  }
+  
+  .modalControls {
+    padding: var(--spacing-sm);
+  }
+  
+  .prevButton,
+  .nextButton {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  
+  .navButton svg {
+    font-size: 1.2rem !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .galleryContainer {
+    margin: var(--spacing-md) 0;
+  }
+  
+  .galleryTitle {
+    font-size: 1.2rem !important;
+    margin-bottom: var(--spacing-md) !important;
+  }
+  
+  .imageGrid .MuiGrid-item {
+    padding: 2px !important;
+  }
+  
+  .imageCard {
+    border-radius: 6px !important;
+  }
+  
+  .imageContainer {
+    padding: 80px 10px 50px;
+  }
+  
+  .modalControls {
+    padding: var(--spacing-xs);
+  }
+  
+  .imageDescription {
+    padding: var(--spacing-sm);
+  }
+  
+  .imageDescription p {
+    font-size: 0.9rem !important;
+  }
+  
+  .prevButton,
+  .nextButton {
+    width: 36px !important;
+    height: 36px !important;
+  }
+  
+  .navButton svg {
+    font-size: 1rem !important;
   }
 }
 

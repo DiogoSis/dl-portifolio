@@ -101,3 +101,50 @@
   z-index: -1;
   transform: rotate(2deg);
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .drawerPaper {
+    width: 250px !important;
+  }
+  
+  .listItem {
+    margin: var(--spacing-xs) var(--spacing-sm) !important;
+  }
+  
+  .listItemText {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .drawerPaper {
+    width: 100vw !important;
+    max-width: 300px !important;
+  }
+  
+  .listItem {
+    margin: var(--spacing-xs) !important;
+    padding: var(--spacing-sm) !important;
+  }
+  
+  .listItemText {
+    font-size: 0.8rem;
+  }
+  
+  .icon {
+    padding: var(--spacing-xs) !important;
+    margin-right: var(--spacing-xs) !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .drawerPaper {
+    width: 100vw !important;
+  }
+  
+  .listItem {
+    margin: 2px !important;
+    padding: var(--spacing-xs) !important;
+  }
+}

@@ -157,6 +157,61 @@
   }
 }
 
+@media (max-width: 480px) {
+  .container {
+    padding: var(--spacing-sm);
+    max-width: 100%;
+  }
+
+  .formPaper {
+    padding: var(--spacing-md) var(--spacing-sm);
+    margin: var(--spacing-xs);
+  }
+
+  .title {
+    font-size: 1.5rem !important;
+    margin-bottom: var(--spacing-sm) !important;
+  }
+
+  .subtitle {
+    font-size: 0.9rem !important;
+  }
+
+  .textField {
+    margin-bottom: var(--spacing-sm) !important;
+  }
+
+  .submitButton {
+    width: 100%;
+    font-size: 1rem !important;
+    padding: 12px 24px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    padding: var(--spacing-xs);
+  }
+
+  .formPaper {
+    padding: var(--spacing-sm);
+    margin: 2px;
+  }
+
+  .title {
+    font-size: 1.3rem !important;
+  }
+
+  .subtitle {
+    font-size: 0.8rem !important;
+  }
+
+  .submitButton {
+    font-size: 0.9rem !important;
+    padding: 10px 20px !important;
+  }
+}
+
 /* Dark theme específico para formulário */
 .textField .MuiInputBase-input::placeholder {
   color: #666 !important;

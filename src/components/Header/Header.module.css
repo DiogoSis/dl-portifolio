@@ -86,19 +86,51 @@
     padding: var(--spacing-xs) var(--spacing-sm) !important;
     transform: rotate(0deg) !important;
   }
+  
+  .menuButton {
+    padding: var(--spacing-xs) !important;
+  }
 }
 
 @media (max-width: 480px) {
   .toolbar {
     padding: var(--spacing-xs) var(--spacing-sm) !important;
+    flex-wrap: nowrap;
+    gap: var(--spacing-xs);
   }
   
   .title {
-    font-size: 1rem !important;
+    font-size: 0.9rem !important;
     padding: var(--spacing-xs) !important;
+    letter-spacing: 0.05em !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100vw - 120px);
   }
   
   .rightSection {
     gap: var(--spacing-xs);
+    flex-shrink: 0;
+  }
+  
+  .menuButton {
+    padding: var(--spacing-xs) !important;
+    min-width: 40px;
+  }
+}
+
+@media (max-width: 360px) {
+  .toolbar {
+    padding: var(--spacing-xs) !important;
+  }
+  
+  .title {
+    font-size: 0.8rem !important;
+    max-width: calc(100vw - 100px);
+  }
+  
+  .rightSection {
+    gap: 2px;
   }
 }

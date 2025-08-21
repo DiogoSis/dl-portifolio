@@ -59,6 +59,16 @@
   box-sizing: border-box;
 }
 
+/* Prevent horizontal overflow on all elements */
+*, *::before, *::after {
+  max-width: 100%;
+}
+
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -66,12 +76,24 @@ body {
   color: var(--text);
   line-height: 1.5;
   overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
   position: relative;
 }
 
 /* Remove cyberpunk grid background */
 body::before {
   display: none;
+}
+
+/* Container and section styles */
+.container,
+section,
+main,
+div {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 h1,
@@ -85,6 +107,9 @@ h6 {
   text-transform: uppercase;
   letter-spacing: -0.02em;
   color: var(--text);
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 h1 {
@@ -236,6 +261,11 @@ button:active {
   h1 {
     font-size: clamp(2rem, 8vw, 3.5rem);
   }
+  
+  .brutal-button {
+    font-size: 0.9rem;
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
 }
 
 @media (max-width: 480px) {
@@ -246,6 +276,96 @@ button:active {
   
   .brutal-card {
     padding: var(--spacing-sm);
+    margin: var(--spacing-xs);
+    border-width: 2px;
+  }
+  
+  h1 {
+    font-size: clamp(1.5rem, 7vw, 2.5rem);
+  }
+  
+  h2 {
+    font-size: clamp(1.3rem, 6vw, 2rem);
+  }
+  
+  h3 {
+    font-size: clamp(1.1rem, 5vw, 1.5rem);
+  }
+  
+  .brutal-button {
+    font-size: 0.8rem;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-width: 2px;
+  }
+}
+
+@media (max-width: 360px) {
+  :root {
+    /* Adjust spacing for very small screens */
+    --spacing-xs: 0.2rem;
+    --spacing-sm: 0.4rem;
+    --spacing-md: 0.8rem;
+    --spacing-lg: 1.2rem;
+  }
+  
+  body {
+    font-size: 0.9rem;
+  }
+  
+  /* Emergency overflow prevention */
+  * {
+    max-width: 360px !important;
+  }
+  
+  html, body, #root {
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+  }
+  
+  .container, 
+  section, 
+  main, 
+  div[class*="Container"],
+  div[class*="content"] {
+    max-width: calc(100vw - 4px) !important;
+    overflow-x: hidden !important;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+  }
+  
+  .brutal-card {
+    padding: var(--spacing-xs);
+    margin: 2px;
+    border-width: 1px;
+    max-width: calc(100vw - 8px) !important;
+  }
+  
+  h1 {
+    font-size: clamp(1.2rem, 6vw, 2rem);
+  }
+  
+  h2 {
+    font-size: clamp(1.1rem, 5vw, 1.5rem);
+  }
+  
+  h3 {
+    font-size: clamp(1rem, 4vw, 1.3rem);
+  }
+  
+  .brutal-button {
+    font-size: 0.75rem;
+    padding: var(--spacing-xs);
+    border-width: 1px;
+    max-width: calc(100vw - 20px) !important;
+  }
+  
+  /* Reduce shadow effects on very small screens */
+  .brutal-card,
+  .brutal-button {
+    box-shadow: 2px 2px 0px var(--shadow);
   }
 }
 

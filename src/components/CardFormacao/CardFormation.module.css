@@ -186,3 +186,56 @@
     font-size: 0.8rem;
   }
 }
+
+@media (max-width: 480px) {
+  .card {
+    padding: var(--spacing-sm);
+    margin: var(--spacing-xs);
+    border-width: 2px;
+  }
+  
+  .nome {
+    font-size: 0.9rem !important;
+    line-height: 1.3;
+  }
+  
+  .area {
+    font-size: 0.75rem;
+  }
+  
+  .materiasTitle {
+    font-size: 0.75rem;
+  }
+  
+  .dates,
+  .materias {
+    font-size: 0.7rem;
+    margin-top: var(--spacing-sm);
+  }
+}
+
+@media (max-width: 360px) {
+  .card {
+    padding: var(--spacing-xs);
+    margin: 2px;
+    border-width: 1px;
+  }
+  
+  .nome {
+    font-size: 0.8rem !important;
+    line-height: 1.2;
+  }
+  
+  .area {
+    font-size: 0.7rem;
+  }
+  
+  .materiasTitle {
+    font-size: 0.7rem;
+  }
+  
+  .dates,
+  .materias {
+    font-size: 0.65rem;
+  }
+}
