@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { CssBaseline, Box } from '@mui/material';
 
+import { ThemeProvider } from './contexts/ThemeContext';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
@@ -19,31 +20,33 @@ const App: React.FC = () => {
   };
 
   return (
-    <Router>
-      <CssBaseline />
-      <Header toggleSidebar={toggleSidebar} />
-      <Box display="flex" flexDirection="row" minHeight="100vh">
-        <Sidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
-        <Box
-          component="main"
-          flexGrow={1}
-          p={3}
-          display="flex"
-          flexDirection="column"
-          alignItems="center"
-        >
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<AboutMe />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/certificates" element={<Certificates />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-          <Footer />
+    <ThemeProvider>
+      <Router>
+        <CssBaseline />
+        <Header toggleSidebar={toggleSidebar} />
+        <Box display="flex" flexDirection="row" minHeight="100vh">
+          <Sidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
+          <Box
+            component="main"
+            flexGrow={1}
+            p={3}
+            display="flex"
+            flexDirection="column"
+            alignItems="center"
+          >
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<AboutMe />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/skills" element={<Skills />} />
+              <Route path="/certificates" element={<Certificates />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+            <Footer />
+          </Box>
         </Box>
-      </Box>
-    </Router>
+      </Router>
+    </ThemeProvider>
   );
 };
 

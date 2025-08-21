@@ -5,6 +5,8 @@ import {
   ListItem,
   ListItemButton,
   ListItemText,
+  Box,
+  Typography,
 } from '@mui/material';
 import { Link } from 'react-router-dom';
 import styles from './Sidebar.module.css';
@@ -36,6 +38,14 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
       open={isOpen}
       onClose={toggleSidebar}
     >
+      {/* Drawer Header */}
+      <Box className={styles.drawerHeader}>
+        <Typography className={styles.drawerTitle}>
+          Menu
+        </Typography>
+      </Box>
+
+      {/* Navigation Menu */}
       <List>
         {menuItems.map(({ text, icon, path }) => (
           <ListItem

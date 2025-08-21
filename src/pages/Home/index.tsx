@@ -13,7 +13,6 @@ import {
 import { useNavigate } from 'react-router-dom';
 
 // Internal components
-import { AnimatedBackground } from '../../components/AnimateBackgound';
 import BarTechIcons from '../../components/BarTechIcons';
 
 // Assets
@@ -31,26 +30,29 @@ const Home: React.FC = () => {
 
   return (
     <Box className={styles.homeContainer}>
-      {/* section 1 */}
+      {/* Hero Section */}
       <Box className={styles.contentContainer}>
         <Typography
           variant="h3"
           className={styles.title}
-          fontFamily="sf pixelate"
+          fontFamily="Inter"
         >
           Oi, eu sou <span className={styles.highlight}>Diogo</span>!
         </Typography>
 
         <Box className={styles.bannerContent}>
-          <Box className={styles.backgroudAnimate}>
-            <AnimatedBackground />
-          </Box>
           <Avatar
             alt="Diogo"
             src={fotoPerfil}
             className={styles.avatar}
-            sx={{ width: 72, height: 72 }}
+            sx={{ 
+              width: 200, 
+              height: 200,
+              border: 'var(--border-extra-thick)',
+              boxShadow: 'var(--shadow-brutal-lg)'
+            }}
           />
+          
           <Typography variant="body1" className={styles.description}>
             Desenvolvo aplicações com foco em entregar soluções de alta
             performance, trago uma visão{' '}
@@ -60,121 +62,98 @@ const Home: React.FC = () => {
             <span className={styles.highlight}>sistemas</span> web.
           </Typography>
         </Box>
-      </Box>
-      <KeyboardDoubleArrowDownIcon
-        className={styles.arrowDown}
-        fontSize="large"
-        sx={{ mb: 3 }}
-      />
 
-      {/*curriculo*/}
-      <Box className={styles.contentContainer}>
-        <Typography variant="h5" className={styles.subTitle} sx={{ mb: 2 }}>
-          Acesse meu Curriculo
-        </Typography>
-
-        <Button
-          className={styles.contentContainerBox}
-          variant="outlined"
-          size="small"
-          endIcon={<KeyboardDoubleArrowRightIcon />}
-          href="http://curriculo-generator-static.s3-website-us-east-1.amazonaws.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span>Curriculo</span>
-        </Button>
-      </Box>
-
-      <KeyboardDoubleArrowDownIcon
-        className={styles.arrowDown}
-        fontSize="large"
-        sx={{ mb: 3 }}
-      />
-
-      {/* section 2 */}
-      <Box className={styles.contentContainer}>
-        <Typography variant="h5" className={styles.subTitle} sx={{ mb: 2 }}>
-          Conheça minha Trajetoria
-        </Typography>
-
-        <Button
-          className={styles.contentContainerBox}
-          variant="outlined"
-          size="small"
-          endIcon={<KeyboardDoubleArrowRightIcon />}
-          onClick={handleNavigateAbout}
-        >
-          <span>Sobre mim</span>
-        </Button>
-        <BarTechIcons />
-      </Box>
-
-      <KeyboardDoubleArrowDownIcon
-        className={styles.arrowDown}
-        fontSize="large"
-        sx={{ mb: 3 }}
-      />
-      {/* section 3 */}
-      <Box
-        className={styles.contentContainer}
-        display="flex"
-        flexDirection="column"
-      >
-        <Typography variant="h5" className={styles.subTitle} sx={{ mb: 2 }}>
-          Minhas Redes
-        </Typography>
-        <Box
-          className={styles.iconContainer}
-          display="flex"
-          justifyContent="center"
-          marginBottom={4}
-        >
+        {/* Action Buttons */}
+        <Box className={styles.actionButtons}>
           <Button
-            href="https://linkedin.com/in/diogosis"
-            target="_blank"
-            rel="noopener noreferrer"
+            variant="contained"
+            endIcon={<KeyboardDoubleArrowRightIcon />}
+            onClick={handleNavigateAbout}
+            className="brutal-btn"
           >
-            <LinkedInIcon fontSize="large" style={{ margin: '0 10px' }} />
+            Sobre mim
           </Button>
+          
           <Button
-            href="https://github.com/DiogoSis"
+            variant="contained"
+            endIcon={<KeyboardDoubleArrowRightIcon />}
+            href="http://curriculo-generator-static.s3-website-us-east-1.amazonaws.com/"
             target="_blank"
             rel="noopener noreferrer"
+            className="brutal-btn"
           >
-            <GitHubIcon fontSize="large" style={{ margin: '0 10px' }} />
+            Currículo
           </Button>
+          
           <Button
-            href="https://wa.me/21970669909?text=Oi%20estou%20vindo%20do%20site."
-            target="_blank"
-            rel="noopener noreferrer"
+            variant="contained"
+            endIcon={<KeyboardDoubleArrowRightIcon />}
+            onClick={handleNavigateContact}
+            className="brutal-btn"
           >
-            <WhatsAppIcon fontSize="large" style={{ margin: '0 10px' }} />
-          </Button>
-          <Button
-            href="https://t.me/21970669909?text=Oi%20estou%20vindo%20do%20site."
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <TelegramIcon fontSize="large" style={{ margin: '0 10px' }} />
-          </Button>
-          <Button
-            href="https://www.reddit.com/user/Diogo-Dev/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <RedditIcon fontSize="large" style={{ margin: '0 10px' }} />
+            Contato
           </Button>
         </Box>
 
-        <Button
-          variant="outlined"
-          size="small"
-          endIcon={<KeyboardDoubleArrowRightIcon />}
-          onClick={handleNavigateContact}
-        >
-          <span>Contact</span>
-        </Button>
+        {/* Tech Icons */}
+        <Box className={styles.techIconsContainer}>
+          <BarTechIcons />
+        </Box>
+      </Box>
+
+      <KeyboardDoubleArrowDownIcon
+        className={styles.arrowDown}
+        fontSize="large"
+      />
+
+      {/* Social Links Section */}
+      <Box className={styles.contentContainer}>
+        <Typography variant="h5" className={styles.subTitle}>
+          Conecte-se comigo
+        </Typography>
+        
+        <Box className={styles.iconContainer}>
+          <a
+            href="https://linkedin.com/in/diogosis"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="brutal-social-link"
+          >
+            <LinkedInIcon fontSize="large" />
+          </a>
+          <a
+            href="https://github.com/DiogoSis"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="brutal-social-link"
+          >
+            <GitHubIcon fontSize="large" />
+          </a>
+          <a
+            href="https://wa.me/21970669909?text=Oi%20estou%20vindo%20do%20site."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="brutal-social-link"
+          >
+            <WhatsAppIcon fontSize="large" />
+          </a>
+          <a
+            href="https://t.me/21970669909?text=Oi%20estou%20vindo%20do%20site."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="brutal-social-link"
+          >
+            <TelegramIcon fontSize="large" />
+          </a>
+          <a
+            href="https://www.reddit.com/user/Diogo-Dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="brutal-social-link"
+          >
+            <RedditIcon fontSize="large" />
+          </a>
+        </Box>
       </Box>
     </Box>
   );

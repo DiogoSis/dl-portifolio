@@ -1,0 +1,197 @@
+/* Skills.module.css */
+
+@font-face {
+  font-family: 'sf pixelate', Courier, monospace;
+  src: url('../../assets/font/SF\ Pixelate.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Container principal */
+.skillsContainer {
+  min-height: calc(100vh - 100px);
+  padding: var(--spacing-xl) var(--spacing-lg);
+  background: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* Header Section */
+.headerSection {
+  text-align: center;
+  margin-bottom: var(--spacing-xxxl);
+  padding: var(--spacing-xl);
+  background: var(--background-card);
+  border: var(--border-extra-thick);
+  box-shadow: var(--shadow-brutal-xl);
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+}
+
+.headerSection::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: 10px;
+  bottom: 10px;
+  background: var(--primary);
+  border: var(--border-thick);
+  z-index: -1;
+  transform: rotate(-1deg);
+}
+
+/* Page Title */
+.pageTitle {
+  color: var(--text) !important;
+  font-family: 'sf pixelate', Courier, monospace !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+  background: var(--accent) !important;
+  padding: var(--spacing-md) var(--spacing-lg) !important;
+  border: var(--border-thick) !important;
+  box-shadow: var(--shadow-brutal-lg) !important;
+  display: inline-block !important;
+  transform: rotate(1deg) !important;
+  margin-bottom: var(--spacing-lg) !important;
+  position: relative !important;
+}
+
+.pageTitle::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: 4px;
+  bottom: 4px;
+  background: var(--secondary);
+  border: var(--border-medium);
+  z-index: -1;
+  transform: rotate(-2deg);
+}
+
+/* Page Subtitle */
+.pageSubtitle {
+  color: var(--text-secondary) !important;
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  margin-top: var(--spacing-md) !important;
+}
+
+/* Skills Grid */
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-xl);
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Skill Category Container */
+.skillCategory {
+  background: var(--background-card);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-brutal-lg);
+  padding: var(--spacing-xl);
+  position: relative;
+  transform: rotate(0.5deg);
+}
+
+.skillCategory:nth-child(even) {
+  transform: rotate(-0.5deg);
+}
+
+.skillCategory::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: 6px;
+  bottom: 6px;
+  background: var(--accent-alt);
+  border: var(--border-medium);
+  z-index: -1;
+}
+
+/* Category Title */
+.categoryTitle {
+  color: var(--text) !important;
+  font-family: 'sf pixelate', Courier, monospace !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+  margin-bottom: var(--spacing-lg) !important;
+  text-align: center;
+  background: var(--primary);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: var(--border-thin);
+  box-shadow: var(--shadow-brutal-sm);
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Skills List */
+.skillsList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .skillsContainer {
+    padding: var(--spacing-lg) var(--spacing-md);
+    margin-top: 20px;
+  }
+  
+  .headerSection {
+    margin-bottom: var(--spacing-xl);
+    padding: var(--spacing-lg);
+  }
+  
+  .pageTitle {
+    font-size: 1.5rem !important;
+    padding: var(--spacing-sm) var(--spacing-md) !important;
+  }
+  
+  .skillsGrid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+  
+  .skillCategory {
+    transform: rotate(0deg);
+  }
+  
+  .skillCategory:nth-child(even) {
+    transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 480px) {
+  .skillsContainer {
+    padding: var(--spacing-md) var(--spacing-sm);
+  }
+  
+  .headerSection {
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .pageTitle {
+    font-size: 1.2rem !important;
+    padding: var(--spacing-xs) var(--spacing-sm) !important;
+  }
+  
+  .skillCategory {
+    padding: var(--spacing-lg);
+  }
+}

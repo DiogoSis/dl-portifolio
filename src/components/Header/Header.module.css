@@ -1,20 +1,104 @@
 .appBar {
-  background-color: #0e0d0d;
-  color: #00ff00;
+  background: var(--primary) !important;
+  color: var(--text) !important;
+  border-bottom: var(--border-extra-thick) !important;
+  box-shadow: 0 4px 0px var(--shadow) !important;
+  position: relative;
+}
+
+.appBar::before {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--secondary);
+  border: var(--border-thin);
 }
 
 .toolbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: var(--spacing-md) var(--spacing-lg) !important;
 }
 
 .menuButton {
-  color: #00ff00;
+  color: var(--text) !important;
+  background: var(--tertiary) !important;
+  border: var(--border-thick) !important;
+  box-shadow: var(--shadow-brutal) !important;
+  border-radius: 0 !important;
+  padding: var(--spacing-sm) !important;
+  transition: all var(--transition-fast) !important;
+}
+
+.menuButton:hover {
+  background: var(--accent) !important;
+  transform: translate(-2px, -2px) !important;
+  box-shadow: var(--shadow-brutal-lg) !important;
 }
 
 .title {
   text-align: center;
-  font-size: 24px;
-  font-weight: bolder;
+  font-size: 1.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  background: var(--quaternary);
+  color: var(--text);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-brutal);
+  position: relative;
+  transform: rotate(-1deg);
+}
+
+.title::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: 3px;
+  bottom: 3px;
+  background: var(--accent-alt);
+  border: var(--border-medium);
+  z-index: -1;
+  transform: rotate(2deg);
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .toolbar {
+    padding: var(--spacing-xs) var(--spacing-md) !important;
+    min-height: 56px !important;
+  }
+  
+  .title {
+    font-size: 1.2rem !important;
+    padding: var(--spacing-xs) var(--spacing-sm) !important;
+    transform: rotate(0deg) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .toolbar {
+    padding: var(--spacing-xs) var(--spacing-sm) !important;
+  }
+  
+  .title {
+    font-size: 1rem !important;
+    padding: var(--spacing-xs) !important;
+  }
+  
+  .rightSection {
+    gap: var(--spacing-xs);
+  }
 }

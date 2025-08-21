@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Box, Typography } from '@mui/material';
 import StarIcon from '@mui/icons-material/Star';
+import StarBorderIcon from '@mui/icons-material/StarBorder';
 import styles from './SkillItem.module.css';
 
 interface SkillItemProps {
@@ -23,31 +24,32 @@ const SkillItem: React.FC<SkillItemProps> = ({ name, icon, type, rating }) => {
   };
 
   const handleClick = () => {
-    setIsActive(prev => !prev); // Alterna o estado ativo
+    setIsActive(prev => !prev);
   };
 
   return (
     <Box
-      display="flex"
-      alignItems="flex-start"
-      mb={2}
-      className={`${styles.skillItem} ${isActive ? styles.active : ''}`} // Adicionando a classe active
+      className={`${styles.skillItem} ${isActive ? styles.active : ''}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      onClick={handleClick} // Adiciona o evento de clique
+      onClick={handleClick}
     >
       <img src={icon} alt={name} className={styles.icon} />
       <Box className={styles.textContainer}>
-        <Typography variant="body1" style={{ fontWeight: 'bolder' }}>
+        <Typography variant="body1" className={styles.skillName}>
           {name}
         </Typography>
-        <Typography variant="body2" color="white">
+        <Typography variant="body2" className={styles.skillType}>
           {type}
         </Typography>
       </Box>
       <Box className={styles.starContainer}>
-        {[...Array(safeRating)].map((_, index) => (
-          <StarIcon key={index} style={{ color: '#FFD700' }} />
+        {[...Array(5)].map((_, index) => (
+          index < safeRating ? (
+            <StarIcon key={index} className="filled" />
+          ) : (
+            <StarBorderIcon key={index} className="empty" />
+          )
         ))}
       </Box>
     </Box>

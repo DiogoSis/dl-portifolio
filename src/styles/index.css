@@ -1,3 +1,6 @@
+@import './GlobalStyles.css';
+@import './brutal-components.css';
+
 :root {
   --french-gray: #b0acb0ff;
   --platinum: #e2dddfff;

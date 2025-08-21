@@ -1,0 +1,263 @@
+/* Brutal Components Styles */
+
+/* Brutal Buttons */
+.brutal-btn,
+.brutal-btn.MuiButton-root {
+  background: var(--secondary) !important;
+  color: var(--text) !important;
+  border: var(--border-thick) !important;
+  box-shadow: var(--shadow-brutal) !important;
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  border-radius: 0 !important;
+  padding: 1rem 2rem !important;
+  transition: all var(--transition-fast) !important;
+  position: relative !important;
+  overflow: visible !important;
+}
+
+.brutal-btn:hover,
+.brutal-btn.MuiButton-root:hover {
+  background: var(--accent) !important;
+  transform: translate(-2px, -2px) !important;
+  box-shadow: var(--shadow-brutal-lg) !important;
+}
+
+.brutal-btn:active,
+.brutal-btn.MuiButton-root:active {
+  transform: translate(1px, 1px) !important;
+  box-shadow: 2px 2px 0px var(--shadow) !important;
+}
+
+/* Brutal Social Links */
+.brutal-social-link {
+  background: var(--tertiary) !important;
+  color: var(--text) !important;
+  border: var(--border-thick) !important;
+  box-shadow: var(--shadow-brutal) !important;
+  padding: var(--spacing-md) !important;
+  transition: all var(--transition-fast) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-decoration: none !important;
+  border-radius: 0 !important;
+}
+
+.brutal-social-link:hover {
+  background: var(--accent) !important;
+  transform: translate(-2px, -2px) !important;
+  box-shadow: var(--shadow-brutal-lg) !important;
+  animation: brutalShake 0.3s ease-in-out !important;
+}
+
+/* Brutal Cards */
+.brutal-card-primary {
+  background: var(--background-card) !important;
+  border: var(--border-thick) !important;
+  box-shadow: var(--shadow-brutal-lg) !important;
+  padding: var(--spacing-lg) !important;
+  position: relative !important;
+  border-radius: 0 !important;
+}
+
+.brutal-card-primary::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: 6px;
+  bottom: 6px;
+  background: var(--primary);
+  border: var(--border-thick);
+  z-index: -1;
+}
+
+.brutal-card-primary:hover {
+  transform: translate(-2px, -2px) !important;
+  box-shadow: var(--shadow-brutal-xl) !important;
+}
+
+/* Brutal Input Fields */
+.brutal-input.MuiTextField-root,
+.brutal-input .MuiOutlinedInput-root {
+  background: var(--background-card) !important;
+  border: var(--border-thick) !important;
+  box-shadow: var(--shadow-brutal) !important;
+  border-radius: 0 !important;
+}
+
+.brutal-input .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border: none !important;
+}
+
+.brutal-input .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border: none !important;
+}
+
+.brutal-input .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border: none !important;
+}
+
+.brutal-input .MuiInputLabel-root {
+  color: var(--text) !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+}
+
+.brutal-input .MuiInputLabel-root.Mui-focused {
+  color: var(--accent) !important;
+}
+
+.brutal-input .MuiOutlinedInput-input {
+  color: var(--text) !important;
+  font-weight: 500 !important;
+  padding: var(--spacing-md) !important;
+}
+
+/* Brutal Avatar */
+.brutal-avatar.MuiAvatar-root {
+  border: var(--border-extra-thick) !important;
+  box-shadow: var(--shadow-brutal-lg) !important;
+  border-radius: 0 !important;
+  position: relative !important;
+}
+
+.brutal-avatar.MuiAvatar-root::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: 8px;
+  bottom: 8px;
+  background: var(--secondary);
+  border: var(--border-thick);
+  z-index: -1;
+}
+
+/* Brutal Typography */
+.brutal-title {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 900 !important;
+  text-transform: uppercase !important;
+  letter-spacing: -0.02em !important;
+  color: var(--text) !important;
+  background: var(--quaternary) !important;
+  padding: var(--spacing-sm) var(--spacing-md) !important;
+  border: var(--border-thick) !important;
+  box-shadow: var(--shadow-brutal) !important;
+  display: inline-block !important;
+  position: relative !important;
+  transform: rotate(-1deg) !important;
+}
+
+.brutal-title::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: 3px;
+  bottom: 3px;
+  background: var(--accent-alt);
+  border: var(--border-medium);
+  z-index: -1;
+  transform: rotate(2deg);
+}
+
+.brutal-subtitle {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  color: var(--text) !important;
+  background: var(--tertiary) !important;
+  padding: var(--spacing-sm) var(--spacing-md) !important;
+  border: var(--border-thick) !important;
+  box-shadow: var(--shadow-brutal) !important;
+  display: inline-block !important;
+}
+
+/* Brutal Paper/Container */
+.brutal-paper.MuiPaper-root {
+  background: var(--background-card) !important;
+  border: var(--border-thick) !important;
+  box-shadow: var(--shadow-brutal-lg) !important;
+  border-radius: 0 !important;
+  position: relative !important;
+}
+
+.brutal-paper.MuiPaper-root::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: 6px;
+  bottom: 6px;
+  background: var(--primary);
+  border: var(--border-thick);
+  z-index: -1;
+}
+
+/* Brutal AppBar */
+.brutal-appbar.MuiAppBar-root {
+  background: var(--primary) !important;
+  color: var(--text) !important;
+  border-bottom: var(--border-extra-thick) !important;
+  box-shadow: 0 4px 0px var(--shadow) !important;
+  position: relative !important;
+}
+
+.brutal-appbar.MuiAppBar-root::before {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--secondary);
+  border: var(--border-thin);
+}
+
+/* Brutal Menu Item */
+.brutal-menu-item {
+  background: var(--background-alt) !important;
+  border: var(--border-thick) !important;
+  box-shadow: var(--shadow-brutal) !important;
+  margin: var(--spacing-xs) !important;
+  border-radius: 0 !important;
+}
+
+.brutal-menu-item:hover {
+  background: var(--secondary) !important;
+  transform: translate(-2px, -2px) !important;
+  box-shadow: var(--shadow-brutal-lg) !important;
+}
+
+/* Brutal Divider */
+.brutal-divider {
+  border: none !important;
+  height: 4px !important;
+  background: var(--accent) !important;
+  box-shadow: var(--shadow-brutal) !important;
+  margin: var(--spacing-lg) 0 !important;
+}
+
+/* Brutal Animation Classes */
+.brutal-hover-lift:hover {
+  transform: translate(-2px, -2px) !important;
+  box-shadow: var(--shadow-brutal-lg) !important;
+}
+
+.brutal-hover-press:active {
+  transform: translate(2px, 2px) !important;
+  box-shadow: 2px 2px 0px var(--shadow) !important;
+}
+
+.brutal-rotate {
+  transform: rotate(-1deg) !important;
+}
+
+.brutal-rotate-alt {
+  transform: rotate(1deg) !important;
+}

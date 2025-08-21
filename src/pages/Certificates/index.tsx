@@ -3,8 +3,8 @@ import { Box, Container, Grid, Typography, Button } from '@mui/material';
 import CardCertificado from '../../components/CardCertificate';
 import certificationsData from '../../static/certifications.json';
 import formationsData from '../../static/formations.json';
-import { AnimatedBackground } from '../../components/AnimateBackgound';
 import CardFormation from '../../components/CardFormacao';
+import styles from './Certificates.module.css';
 
 interface Certificate {
   id: number;
@@ -64,17 +64,25 @@ const Certificates: React.FC = () => {
   );
 
   return (
-    <Container>
-      {/* Animação */}
-      <Box position="fixed" width="100%">
-        <AnimatedBackground />
+    <Container maxWidth="lg" className={styles.certificatesContainer}>
+      {/* Header Section */}
+      <Box className={styles.headerSection}>
+        <Typography variant="h3" component="h1" className={styles.pageTitle}>
+          Certificações
+        </Typography>
+        <Typography variant="h6" className={styles.pageSubtitle}>
+          Minha jornada de aprendizado e certificações
+        </Typography>
       </Box>
 
-      {/* Formações */}
-      <Typography variant="h3" marginTop={5}>
-        Cursos e Formações
-      </Typography>
-      <Grid container spacing={4}>
+      {/* Formações Section */}
+      <Box className={styles.sectionTitle}>
+        <Typography variant="h4" component="h2">
+          Cursos e Formações
+        </Typography>
+      </Box>
+      
+      <Grid container spacing={4} className={styles.contentGrid}>
         {formations.map(formation => (
           <Grid item key={formation.id} xs={12} sm={6} md={4}>
             <CardFormation {...formation} />
@@ -82,33 +90,35 @@ const Certificates: React.FC = () => {
         ))}
       </Grid>
 
-      {/* Cursos */}
-      <Typography variant="h3" marginTop={2}>
-        Micro Certificações
-      </Typography>
-
-      {/* Categorias */}
-      <Box display="flex" flexWrap="wrap" marginTop={2}>
-        {categories.map(category => (
-          <Button
-            key={category}
-            variant={
-              selectedCategories.includes(category) ? 'contained' : 'outlined'
-            }
-            onClick={() => handleCategoryChange(category)}
-            sx={{
-              marginRight: 1,
-              marginBottom: 1,
-              textTransform: 'none',
-            }}
-          >
-            {category}
-          </Button>
-        ))}
+      {/* Micro Certificações Section */}
+      <Box className={styles.sectionTitle}>
+        <Typography variant="h4" component="h2">
+          Micro Certificações
+        </Typography>
       </Box>
 
-      {/* Renderizar os certificados filtrados */}
-      <Grid container paddingTop={8} spacing={4} alignItems="center">
+      {/* Filter Section */}
+      <Box className={styles.filterSection}>
+        <Box className={styles.filterButtons}>
+          {categories.map(category => (
+            <Button
+              key={category}
+              variant={
+                selectedCategories.includes(category) ? 'contained' : 'outlined'
+              }
+              onClick={() => handleCategoryChange(category)}
+              className={`${styles.filterButton} ${
+                selectedCategories.includes(category) ? styles.active : ''
+              }`}
+            >
+              {category}
+            </Button>
+          ))}
+        </Box>
+      </Box>
+
+      {/* Certificados Grid */}
+      <Grid container spacing={4} className={styles.certificatesGrid}>
         {filteredCertificates.map(certificado => (
           <Grid item key={certificado.id} xs={12} sm={6} md={4}>
             <CardCertificado {...certificado} />

@@ -1,33 +1,103 @@
 .drawerPaper {
-  width: 240px;
-  background-color: #0e0d0d !important;
-  color: #00ff00;
-  flex-direction: colum;
-  align-items: center;
-  justify-content: center;
+  width: 280px !important;
+  background: var(--background-card) !important;
+  color: var(--text) !important;
+  border-right: var(--border-extra-thick) !important;
+  box-shadow: 4px 0 0px var(--shadow) !important;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.drawerPaper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -8px;
+  bottom: 0;
+  width: 4px;
+  background: var(--accent);
+  border: var(--border-thin);
 }
 
 .listItem {
-  width: 100%;
+  width: 100% !important;
+  margin: var(--spacing-xs) var(--spacing-md) !important;
+  background: var(--background-alt) !important;
+  border: var(--border-thick) !important;
+  box-shadow: var(--shadow-brutal) !important;
+  transition: all var(--transition-fast) !important;
+  border-radius: 0 !important;
+}
+
+.listItem:hover {
+  background: var(--secondary) !important;
+  transform: translate(-2px, -2px) !important;
+  box-shadow: var(--shadow-brutal-lg) !important;
+}
+
+.listItem:active {
+  transform: translate(1px, 1px) !important;
+  box-shadow: 2px 2px 0px var(--shadow) !important;
 }
 
 .icon {
-  margin-right: 8px;
-  color: #ffffff;
+  margin-right: var(--spacing-sm) !important;
+  color: var(--text) !important;
+  background: var(--tertiary) !important;
+  padding: var(--spacing-xs) !important;
+  border: var(--border-medium) !important;
+  box-shadow: var(--shadow-brutal) !important;
+  border-radius: 0 !important;
 }
 
 .listItemText {
-  color: #00ff00;
-  font-weight: bolder;
-  font-family: 'sf pixelate';
+  color: var(--text) !important;
+  font-weight: 700 !important;
+  font-family: 'Inter', sans-serif !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
 }
+
 .listItemText:focus {
   outline: none;
 }
 
-.listItemText:hover {
-  background-color: #8d8d8d;
-  transition: 0.3s;
-  transform: skewX(20deg);
-  border-radius: 5px;
+/* Drawer header */
+.drawerHeader {
+  padding: var(--spacing-lg) !important;
+  background: var(--primary) !important;
+  border-bottom: var(--border-thick) !important;
+  box-shadow: 0 4px 0px var(--shadow) !important;
+  margin-bottom: var(--spacing-md) !important;
+}
+
+.drawerTitle {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 900 !important;
+  font-size: 1.5rem !important;
+  text-transform: uppercase !important;
+  color: var(--text) !important;
+  text-align: center !important;
+  background: var(--quaternary) !important;
+  padding: var(--spacing-sm) !important;
+  border: var(--border-thick) !important;
+  box-shadow: var(--shadow-brutal) !important;
+  transform: rotate(-1deg) !important;
+  position: relative !important;
+}
+
+.drawerTitle::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: 3px;
+  bottom: 3px;
+  background: var(--accent);
+  border: var(--border-medium);
+  z-index: -1;
+  transform: rotate(2deg);
 }

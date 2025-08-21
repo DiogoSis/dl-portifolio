@@ -1,6 +1,7 @@
 import React from 'react';
-import { AppBar, Toolbar, IconButton, Typography } from '@mui/material';
+import { AppBar, Toolbar, IconButton, Typography, Box } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import ThemeToggle from '../ThemeToggle';
 import styles from './Header.module.css';
 
 interface HeaderProps {
@@ -19,9 +20,14 @@ const Header: React.FC<HeaderProps> = ({ toggleSidebar }) => {
         >
           <MenuIcon />
         </IconButton>
+        
         <Typography className={styles.title} variant="h6">
           Diogo Luna
         </Typography>
+        
+        <Box className={styles.rightSection}>
+          <ThemeToggle />
+        </Box>
       </Toolbar>
     </AppBar>
   );

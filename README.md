@@ -1,6 +1,29 @@
 # Portfolio Project
 https://www.diogoluna.cloud/
 
+## ✨ Características Principais
+
+- **🎨 Sistema de Temas Dual**: Modo claro e escuro com alternância dinâmica
+- **🎯 Design Neubrutalism**: Estilo brutal moderno e impactante
+- **📱 Totalmente Responsivo**: Funciona perfeitamente em desktop, tablet e mobile
+- **⚡ Performance Otimizada**: Built com Vite para carregamento rápido
+- **🔧 TypeScript**: Código tipado e robusto
+
+## 🌓 Sistema de Temas
+
+O portfólio possui um sistema avançado de temas com duas opções:
+
+### Modo Escuro (Padrão)
+- Cores gamer: Preto (#1B1B1B) e Verde neon (#00FF00)
+- Visual agressivo e moderno
+- Ideal para desenvolvedores
+
+### Modo Claro
+- Paleta suave e profissional
+- Tons amenos e clean
+- Perfeito para apresentações formais
+
+**Como usar**: Clique no botão de alternância no header (ícone sol/lua)
 
 ## Descrição
 
@@ -13,6 +36,17 @@ Este é um projeto de portfólio desenvolvido para destacar habilidades e experi
 - **Material-UI (MUI):** Biblioteca de componentes React que implementa o design Material.
 - **CSS Modules:** Sistema de módulos CSS que garante escopo local dos estilos.
 - **Vite:** Ferramenta de construção rápida para desenvolvimento em React.
+- **Context API:** Gerenciamento de estado global para temas.
+- **CSS Variables:** Sistema dinâmico de cores e estilos.
+
+## 🎨 Design System
+
+O projeto utiliza um design system baseado em **Neubrutalism** com:
+- Bordas grossas e contrastantes
+- Sombras brutais e marcantes
+- Tipografia pixelada (SF Pixelate)
+- Cores vibrantes e chamativas
+- Layouts assimétricos e impactantes
 
 ## Estrutura do Projeto
 
