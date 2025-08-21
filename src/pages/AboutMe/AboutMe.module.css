@@ -156,11 +156,20 @@
   .content {
     margin: 1rem auto;
     padding: 0 var(--spacing-md);
+    max-width: 100%;
   }
 
   .contentBox {
     padding: var(--spacing-lg);
     margin: var(--spacing-xl) 0;
+    max-width: 100%;
+  }
+  
+  .contentBox::before {
+    top: -6px;
+    left: -6px;
+    right: 6px;
+    bottom: 6px;
   }
 
   .contentBoxTimeLine {
@@ -196,36 +205,118 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .content {
     padding: 0 var(--spacing-sm);
+    margin: 0.5rem auto;
   }
 
   .contentBox {
     padding: var(--spacing-md);
     margin: var(--spacing-lg) 0;
+    border-width: 3px;
+  }
+  
+  .contentBox::before {
+    top: -4px;
+    left: -4px;
+    right: 4px;
+    bottom: 4px;
+    border-width: 3px;
   }
 
   .title {
-    font-size: 1.5rem !important;
-    padding: var(--spacing-xs) var(--spacing-sm) !important;
-  }
-
-  .sectionTitle {
-    font-size: 1.2rem !important;
-    padding: var(--spacing-xs) !important;
-  }
-
-  .descriptionSection {
-    padding: var(--spacing-md);
+    font-size: 1.8rem !important;
+    padding: var(--spacing-sm) !important;
   }
 
   .description {
+    font-size: 0.95rem !important;
+    padding: var(--spacing-sm) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 0 var(--spacing-xs);
+    margin: 0.25rem auto;
+  }
+
+  .contentBox {
+    padding: var(--spacing-sm);
+    margin: var(--spacing-md) 0;
+    border-width: 2px;
+  }
+  
+  .contentBox::before {
+    top: -3px;
+    left: -3px;
+    right: 3px;
+    bottom: 3px;
+    border-width: 2px;
+  }
+
+  .contentBoxTimeLine {
+    margin: var(--spacing-md) 0 !important;
     padding: var(--spacing-sm) !important;
   }
 
   .timelineSection, .gallerySection {
+    margin-bottom: var(--spacing-md);
+    padding: var(--spacing-xs);
+  }
+
+  .title {
+    font-size: 1.6rem !important;
+    padding: var(--spacing-xs) !important;
+    text-align: center !important;
+  }
+
+  .sectionTitle {
+    font-size: 1.3rem !important;
+    padding: var(--spacing-xs) !important;
+    text-align: center;
+  }
+
+  .descriptionSection {
+    margin: var(--spacing-md) 0;
     padding: var(--spacing-sm);
+  }
+
+  .description {
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+    padding: var(--spacing-xs) !important;
+    text-align: left !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .content {
+    padding: 0 var(--spacing-xs);
+  }
+
+  .contentBox {
+    padding: var(--spacing-xs);
+    margin: var(--spacing-sm) 0;
+  }
+
+  .contentBoxTimeLine {
+    padding: var(--spacing-xs) !important;
+  }
+
+  .title {
+    font-size: 1.4rem !important;
+    word-break: break-word;
+  }
+
+  .sectionTitle {
+    font-size: 1.2rem !important;
+  }
+
+  .description {
+    font-size: 0.85rem !important;
+    line-height: 1.4 !important;
   }
 }
 
