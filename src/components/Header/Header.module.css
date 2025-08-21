@@ -51,8 +51,9 @@
   padding: var(--spacing-sm) var(--spacing-md);
   border: var(--border-thick);
   box-shadow: var(--shadow-brutal);
-  position: relative;
-  transform: rotate(-1deg);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) rotate(-1deg);
 }
 
 .title::before {
@@ -81,22 +82,25 @@
     min-height: 56px !important;
   }
   
+  .menuButton {
+    padding: var(--spacing-xs) !important;
+  }
+  
   .title {
     font-size: 1.2rem !important;
     padding: var(--spacing-xs) var(--spacing-sm) !important;
-    transform: rotate(0deg) !important;
-  }
-  
-  .menuButton {
-    padding: var(--spacing-xs) !important;
+    transform: translateX(-50%) rotate(0deg) !important;
   }
 }
 
 @media (max-width: 480px) {
   .toolbar {
     padding: var(--spacing-xs) var(--spacing-sm) !important;
-    flex-wrap: nowrap;
-    gap: var(--spacing-xs);
+  }
+  
+  .menuButton {
+    padding: var(--spacing-xs) !important;
+    min-width: 40px;
   }
   
   .title {
@@ -111,12 +115,6 @@
   
   .rightSection {
     gap: var(--spacing-xs);
-    flex-shrink: 0;
-  }
-  
-  .menuButton {
-    padding: var(--spacing-xs) !important;
-    min-width: 40px;
   }
 }
 
