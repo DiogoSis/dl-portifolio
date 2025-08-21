@@ -1,0 +1,217 @@
+/* Estilos Neubrutalism para formulários */
+
+.formContainer {
+  background: var(--background-card);
+  border: var(--border-extra-thick);
+  box-shadow: var(--shadow-brutal-xl);
+  padding: var(--spacing-xl);
+  position: relative;
+}
+
+.formContainer::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: 8px;
+  bottom: 8px;
+  background: var(--primary);
+  border: var(--border-thick);
+  z-index: -1;
+}
+
+.formHeader {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.formTitle {
+  color: var(--text);
+  font-family: 'SF Pixelate', monospace;
+  background: var(--secondary);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-brutal);
+  padding: var(--spacing-md);
+  text-transform: uppercase;
+  font-weight: 900;
+  transform: rotate(-1deg);
+  display: inline-block;
+  margin-bottom: var(--spacing-md);
+}
+
+.formSubtitle {
+  color: var(--text-secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+.inputGroup {
+  margin-bottom: var(--spacing-lg);
+}
+
+.label {
+  display: block;
+  color: var(--text);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: var(--spacing-sm);
+}
+
+.input {
+  width: 100%;
+  background: var(--background);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-brutal);
+  padding: var(--spacing-md);
+  color: var(--text);
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  transition: all var(--transition-fast);
+}
+
+.input:hover {
+  background: var(--background-alt);
+  transform: translate(-2px, -2px);
+  box-shadow: var(--shadow-brutal-lg);
+}
+
+.input:focus {
+  outline: none;
+  background: var(--background-alt);
+  transform: translate(-2px, -2px);
+  box-shadow: var(--shadow-brutal-lg);
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 120px;
+  font-family: 'Inter', sans-serif;
+}
+
+.button {
+  background: var(--primary);
+  color: var(--text);
+  border: var(--border-extra-thick);
+  box-shadow: var(--shadow-brutal-lg);
+  padding: var(--spacing-md) var(--spacing-xl);
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.button:hover {
+  background: var(--secondary);
+  transform: translate(-3px, -3px);
+  box-shadow: var(--shadow-brutal-xl);
+}
+
+.button:disabled {
+  background: var(--text-secondary);
+  color: var(--background);
+  transform: none;
+  box-shadow: var(--shadow-brutal);
+  cursor: not-allowed;
+}
+
+.errorMessage {
+  color: var(--quaternary);
+  background: var(--background);
+  border: 2px solid var(--quaternary);
+  padding: var(--spacing-xs);
+  box-shadow: 2px 2px 0px var(--quaternary);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-top: var(--spacing-xs);
+}
+
+.successMessage {
+  color: var(--text);
+  background: var(--tertiary);
+  border: var(--border-thick);
+  padding: var(--spacing-md);
+  box-shadow: var(--shadow-brutal);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .formContainer {
+    padding: var(--spacing-lg);
+  }
+  
+  .formContainer::before {
+    top: -6px;
+    left: -6px;
+    right: 6px;
+    bottom: 6px;
+  }
+  
+  .formTitle {
+    transform: rotate(0deg);
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .formContainer {
+    padding: var(--spacing-md);
+    margin: var(--spacing-xs);
+  }
+  
+  .formTitle {
+    font-size: 1.5rem;
+    padding: var(--spacing-sm);
+  }
+  
+  .button {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .formContainer {
+    padding: var(--spacing-sm);
+    margin: 2px;
+    border-width: 2px;
+  }
+  
+  .formContainer::before {
+    top: -4px;
+    left: -4px;
+    right: 4px;
+    bottom: 4px;
+    border-width: 2px;
+  }
+  
+  .formTitle {
+    font-size: 1.3rem;
+    padding: var(--spacing-xs);
+  }
+  
+  .input,
+  .button {
+    border-width: 2px;
+    box-shadow: 2px 2px 0px var(--shadow);
+  }
+  
+  .input:hover,
+  .input:focus {
+    transform: translate(-1px, -1px);
+    box-shadow: 3px 3px 0px var(--shadow);
+  }
+  
+  .button:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 4px 4px 0px var(--shadow);
+  }
+}

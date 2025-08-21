@@ -2,14 +2,30 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 .formPaper {
   padding: 3rem;
-  border-radius: 16px !important;
-  background: linear-gradient(135deg, #1e1e1e 0%, #2a2a2a 100%) !important;
-  border: 1px solid #333;
-  box-shadow: 0 8px 32px rgba(0, 255, 0, 0.1) !important;
+  border-radius: 0 !important;
+  background: var(--background-card) !important;
+  border: var(--border-extra-thick) !important;
+  box-shadow: var(--shadow-brutal-xl) !important;
+  position: relative;
+}
+
+.formPaper::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: 8px;
+  bottom: 8px;
+  background: var(--primary);
+  border: var(--border-thick);
+  z-index: -1;
 }
 
 .header {
@@ -18,16 +34,25 @@
 }
 
 .title {
-  color: #00ff00 !important;
+  color: var(--text) !important;
   font-family: 'SF Pixelate', monospace !important;
   margin-bottom: 1rem !important;
-  text-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+  text-shadow: none;
+  background: var(--secondary);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-brutal);
+  padding: var(--spacing-md);
+  text-transform: uppercase;
+  font-weight: 900;
+  transform: rotate(-1deg);
 }
 
 .subtitle {
-  color: #b0b0b0 !important;
+  color: var(--text-secondary) !important;
   font-size: 1.1rem !important;
   line-height: 1.6;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .form {
@@ -35,95 +60,137 @@
 }
 
 .textField {
-  margin-bottom: 1rem !important;
+  margin-bottom: 1.5rem !important;
 }
 
 .textField .MuiOutlinedInput-root {
-  background-color: rgba(255, 255, 255, 0.05) !important;
-  border-radius: 8px !important;
-  transition: all 0.3s ease !important;
+  background-color: var(--background) !important;
+  border-radius: 0 !important;
+  border: var(--border-thick) !important;
+  box-shadow: var(--shadow-brutal) !important;
+  transition: all var(--transition-fast) !important;
 }
 
 .textField .MuiOutlinedInput-root:hover {
-  background-color: rgba(255, 255, 255, 0.08) !important;
+  background-color: var(--background-alt) !important;
+  transform: translate(-2px, -2px) !important;
+  box-shadow: var(--shadow-brutal-lg) !important;
 }
 
 .textField .MuiOutlinedInput-root.Mui-focused {
-  background-color: rgba(255, 255, 255, 0.1) !important;
-  box-shadow: 0 0 0 2px rgba(0, 255, 0, 0.2) !important;
+  background-color: var(--background-alt) !important;
+  box-shadow: var(--shadow-brutal-lg) !important;
+  transform: translate(-2px, -2px) !important;
 }
 
 .textField .MuiOutlinedInput-notchedOutline {
-  border-color: #333 !important;
+  border: none !important;
 }
 
 .textField .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
-  border-color: #555 !important;
+  border: none !important;
 }
 
 .textField .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
-  border-color: #00ff00 !important;
-  border-width: 2px !important;
+  border: none !important;
 }
 
 .textField .MuiInputLabel-root {
-  color: #b0b0b0 !important;
+  color: var(--text) !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  font-family: 'Inter', sans-serif !important;
 }
 
 .textField .MuiInputLabel-root.Mui-focused {
-  color: #00ff00 !important;
+  color: var(--text) !important;
 }
 
 .textField .MuiOutlinedInput-input {
-  color: #ffffff !important;
+  color: var(--text) !important;
   font-size: 1rem !important;
+  font-weight: 600 !important;
+  font-family: 'Inter', sans-serif !important;
 }
 
 .textField .MuiFormHelperText-root {
-  color: #888 !important;
+  color: var(--text-secondary) !important;
   margin-left: 0 !important;
   margin-top: 8px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  font-size: 0.8rem !important;
 }
 
 .textField .MuiFormHelperText-root.Mui-error {
-  color: #ff4444 !important;
+  color: var(--quaternary) !important;
+  background: var(--background) !important;
+  border: 2px solid var(--quaternary) !important;
+  padding: var(--spacing-xs) !important;
+  box-shadow: 2px 2px 0px var(--quaternary) !important;
+  font-weight: 700 !important;
 }
 
 .inputIcon {
-  color: #00ff00 !important;
+  color: var(--text) !important;
   margin-right: 12px !important;
-  opacity: 0.8;
+  opacity: 1;
+  background: var(--tertiary) !important;
+  border: var(--border-thin) !important;
+  padding: var(--spacing-xs) !important;
+  box-shadow: var(--shadow-brutal) !important;
 }
 
 .submitButton {
-  background: linear-gradient(45deg, #00ff00, #00cc00) !important;
-  color: #000000 !important;
-  font-weight: 600 !important;
-  font-size: 1.1rem !important;
-  padding: 14px 32px !important;
-  border-radius: 8px !important;
-  margin-top: 1.5rem !important;
-  text-transform: none !important;
-  transition: all 0.3s ease !important;
-  box-shadow: 0 4px 16px rgba(0, 255, 0, 0.3) !important;
+  background: var(--primary) !important;
+  color: var(--text) !important;
+  font-weight: 800 !important;
+  font-size: 1.2rem !important;
+  padding: var(--spacing-md) var(--spacing-xl) !important;
+  border-radius: 0 !important;
+  margin-top: 2rem !important;
+  text-transform: uppercase !important;
+  transition: all var(--transition-fast) !important;
+  border: var(--border-extra-thick) !important;
+  box-shadow: var(--shadow-brutal-lg) !important;
+  font-family: 'Inter', sans-serif !important;
+  letter-spacing: 0.05em !important;
 }
 
 .submitButton:hover {
-  background: linear-gradient(45deg, #00cc00, #00aa00) !important;
-  transform: translateY(-2px) !important;
-  box-shadow: 0 6px 20px rgba(0, 255, 0, 0.4) !important;
+  background: var(--secondary) !important;
+  transform: translate(-3px, -3px) !important;
+  box-shadow: var(--shadow-brutal-xl) !important;
 }
 
 .submitButton:disabled {
-  background: #333 !important;
-  color: #666 !important;
+  background: var(--text-secondary) !important;
+  color: var(--background) !important;
   transform: none !important;
-  box-shadow: none !important;
+  box-shadow: var(--shadow-brutal) !important;
+  border: var(--border-thick) !important;
 }
 
 .alert {
   margin-bottom: 2rem !important;
-  border-radius: 8px !important;
+  border-radius: 0 !important;
+  border: var(--border-thick) !important;
+  box-shadow: var(--shadow-brutal) !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  font-family: 'Inter', sans-serif !important;
+}
+
+.alert.MuiAlert-standardSuccess {
+  background-color: var(--tertiary) !important;
+  color: var(--text) !important;
+  border-color: var(--text) !important;
+}
+
+.alert.MuiAlert-standardError {
+  background-color: var(--quaternary) !important;
+  color: var(--background) !important;
+  border-color: var(--text) !important;
 }
 
 .alert.MuiAlert-standardSuccess {
@@ -133,9 +200,35 @@
 }
 
 .alert.MuiAlert-standardError {
-  background-color: rgba(255, 68, 68, 0.1) !important;
-  color: #ff4444 !important;
-  border: 1px solid rgba(255, 68, 68, 0.3) !important;
+  background-color: var(--quaternary) !important;
+  color: var(--background) !important;
+  border-color: var(--text) !important;
+}
+
+/* Dark theme específico para formulário brutal */
+.textField .MuiInputBase-input::placeholder {
+  color: var(--text-secondary) !important;
+  opacity: 1 !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+}
+
+/* Animações brutais */
+.textField .MuiOutlinedInput-root,
+.submitButton {
+  transition: all var(--transition-fast) !important;
+}
+
+/* Estilo para textarea brutal */
+.textField .MuiOutlinedInput-root.MuiInputBase-multiline {
+  padding: var(--spacing-md) !important;
+}
+
+.textField .MuiOutlinedInput-root.MuiInputBase-multiline .MuiOutlinedInput-input {
+  padding: 0 !important;
+  min-height: 120px !important;
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 600 !important;
 }
 
 /* Responsividade */
@@ -147,9 +240,17 @@
   .formPaper {
     padding: 2rem 1.5rem;
   }
+  
+  .formPaper::before {
+    top: -6px;
+    left: -6px;
+    right: 6px;
+    bottom: 6px;
+  }
 
   .title {
     font-size: 1.8rem !important;
+    transform: rotate(0deg) !important;
   }
 
   .subtitle {
@@ -196,10 +297,20 @@
   .formPaper {
     padding: var(--spacing-sm);
     margin: 2px;
+    border-width: 2px;
+  }
+  
+  .formPaper::before {
+    top: -4px;
+    left: -4px;
+    right: 4px;
+    bottom: 4px;
+    border-width: 2px;
   }
 
   .title {
     font-size: 1.3rem !important;
+    padding: var(--spacing-xs) var(--spacing-sm);
   }
 
   .subtitle {
@@ -208,30 +319,19 @@
 
   .submitButton {
     font-size: 0.9rem !important;
-    padding: 10px 20px !important;
+    padding: var(--spacing-sm) var(--spacing-md) !important;
+    border-width: 2px;
+    box-shadow: 2px 2px 0px var(--shadow);
   }
-}
-
-/* Dark theme específico para formulário */
-.textField .MuiInputBase-input::placeholder {
-  color: #666 !important;
-  opacity: 1 !important;
-}
-
-/* Animações suaves */
-.textField .MuiOutlinedInput-root,
-.submitButton {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
-}
-
-/* Estilo para textarea */
-.textField .MuiOutlinedInput-root.MuiInputBase-multiline {
-  padding: 12px !important;
-}
-
-.textField
-  .MuiOutlinedInput-root.MuiInputBase-multiline
-  .MuiOutlinedInput-input {
-  padding: 0 !important;
-  min-height: 120px !important;
+  
+  .textField .MuiOutlinedInput-root {
+    border-width: 2px;
+    box-shadow: 2px 2px 0px var(--shadow);
+  }
+  
+  .textField .MuiOutlinedInput-root:hover,
+  .textField .MuiOutlinedInput-root.Mui-focused {
+    transform: translate(-1px, -1px) !important;
+    box-shadow: 3px 3px 0px var(--shadow) !important;
+  }
 }
